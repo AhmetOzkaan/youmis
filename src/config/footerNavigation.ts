@@ -50,6 +50,67 @@ export const footerNavigationData: FooterData = {
 			subCategories: [
 				{
 					subCategory: 'Features',
+					subCategoryLink: '/'
+				},
+				{
+					subCategory: 'FAQ',
+					subCategoryLink: '/'
+				},
+				{
+					subCategory: 'Pricing',
+					subCategoryLink: '/'
+				},
+				{
+					subCategory: 'Changelog',
+					subCategoryLink: '/'
+				},
+				{
+					subCategory: 'Terms',
+					subCategoryLink: '/'
+				}
+			]
+		},
+		{
+			category: 'About us',
+			subCategories: [
+				{
+					subCategory: 'About us',
+					subCategoryLink: '/'
+				},
+				{
+					subCategory: 'News',
+					subCategoryLink: '/'
+				},
+				{
+					subCategory: 'Careers',
+					subCategoryLink: '/'
+				}
+			]
+		},
+		{
+			category: 'Get in touch',
+			subCategories: [
+				{
+					subCategory: 'Contact',
+					subCategoryLink: '/'
+				},
+				{
+					subCategory: 'Support',
+					subCategoryLink: '/'
+				},
+				{
+					subCategory: 'Join us',
+					subCategoryLink: '/'
+				}
+			]
+		}
+	],
+	/*footerColumns: [
+		{
+			category: 'Product',
+			subCategories: [
+				{
+					subCategory: 'Features',
 					subCategoryLink: '/features'
 				},
 				{
@@ -104,7 +165,7 @@ export const footerNavigationData: FooterData = {
 				}
 			]
 		}
-	],
+	],*/
 	subFooter: {
 		copywriteText: `© youMIS ${new Date().getFullYear()}.`
 	}

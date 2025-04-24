@@ -39,6 +39,31 @@ export const navigationBarData: NavData = {
 	},
 	navItems: [
 		{ name: 'Home', link: '/' },
+		{ name: 'MIS', link: '/' },
+		{
+			name: 'Courses',
+			link: '#',
+			submenu: [
+				{ name: 'Course 1', link: '/' },
+				{ name: 'Course 2', link: '/' },
+				{ name: 'Course 3', link: '/' },
+				{ name: 'Course 4', link: '/' }
+			]
+		},
+		{ name: 'Blog', link: '/' },
+		{ name: 'About', link: '/' }
+	],
+	navActions: [{ name: 'Career Test', link: '/', style: 'primary', size: 'lg' }]
+}
+/*
+export const navigationBarData: NavData = {
+	logo: {
+		src: '/logo.svg',
+		alt: 'youMIS?',
+		text: 'youMIS?'
+	},
+	navItems: [
+		{ name: 'Home', link: '/' },
 		{ name: 'MIS', link: '/pricing' },
 		{
 			name: 'Courses',
@@ -55,3 +80,4 @@ export const navigationBarData: NavData = {
 	],
 	navActions: [{ name: 'Test', link: '/test', style: 'primary', size: 'lg' }]
 }
+*/

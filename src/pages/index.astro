@@ -14,16 +14,40 @@ import CTA from '../components/blocks/CTA/BasicDark.astro'
 import testimonialBackground from '../assets/testimonial-bg-01.webp'
 // - SEO
 const SEO = {
-	title: 'youMIS | Don’t MISs Your Future!',
+	title: 'youMIS | Don`t MISs Your Future!',
 	description:
 		'youMIS' //will be updated
 }
+
+// Custom testimonials (if you want to override defaults)
+const testimonials = [
+	{
+		blockquote: "Studying MIS opens many doors but I didn't know which one to enter. youMIS showed me which areas I'm more inclined towards. I'm now on the path to data science.",
+		figcaption: "Ahmet Yılmaz",
+		cite: "MIS Graduate"
+	},
+	{
+		blockquote: "The test is short and simple but its analysis is very accurate. It's the first time I've encountered such a personalized recommendation list.",
+		figcaption: "Ayşe Kaya",
+		cite: "Student"
+	},
+	{
+		blockquote: "The design of the test page was very eye-catching which made the test more appealing to me.",
+		figcaption: "Mehmet Demir",
+		cite: "University Student"
+	},
+	{
+		blockquote: "If this platform existed when I was studying in the department, everything would have been much easier. It's a great opportunity for new graduates.",
+		figcaption: "Zeynep Şahin",
+		cite: "Recent Graduate"
+	}
+];
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero />
 	<Features />
-	<Testimonial bg={testimonialBackground} bgPosition="right" />
+	<Testimonial testimonials={testimonials} bg={testimonialBackground} bgPosition="right" />
 	<HighlightBlocks />
 	<CTA />
 </Layout>

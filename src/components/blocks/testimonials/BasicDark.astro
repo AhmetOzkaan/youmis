@@ -12,17 +12,43 @@ import Col from '../../ui/Col.astro'
 import Testimonial from '../../ui/Testimonial.astro'
 
 // Props
+type TestimonialItem = {
+	blockquote: string
+	figcaption: string
+	cite: string
+}
+
 type Props = {
-	blockquote?: string
-	figcaption?: string
-	cite?: string
+	testimonials?: TestimonialItem[]
 	bg?: any
 	bgPosition?: 'left' | 'right' | 'center'
 }
+
+const defaultTestimonials = [
+	{
+		blockquote: "Studying MIS opens many doors but I didn't know which one to enter. youMIS showed me which areas I'm more inclined towards. I'm now on the path to data science.",
+		figcaption: "Ahmet Yılmaz",
+		cite: "MIS Graduate"
+	},
+	{
+		blockquote: "The test is short and simple but its analysis is very accurate. It's the first time I've encountered such a personalized recommendation list.",
+		figcaption: "Ayşe Kaya",
+		cite: "Student"
+	},
+	{
+		blockquote: "The design of the test page was very eye-catching which made the test more appealing to me.",
+		figcaption: "Mehmet Demir",
+		cite: "University Student"
+	},
+	{
+		blockquote: "If this platform existed when I was studying in the department, everything would have been much easier. It's a great opportunity for new graduates.",
+		figcaption: "Zeynep Şahin",
+		cite: "Recent Graduate"
+	}
+];
+
 const {
-	blockquote = 'Foxi is like a rocket boost for our productivity! Its sleek design and out-of-this-world features make managing projects and team communication a breeze.',
-	figcaption = 'Sheryl Sandberg',
-	cite = 'CEO, Facebook',
+	testimonials = defaultTestimonials,
 	bg,
 	bgPosition = 'center'
 } = Astro.props
@@ -37,16 +63,252 @@ const {
 >
 	<Row>
 		<Col span="12">
-			<Testimonial
-				blockquote={blockquote}
-				figcaption={figcaption}
-				cite={cite}
-				align="center"
-				size="4xl"
-				mobileSize="2xl"
-				classes="!leading-tight font-bold xl:text-5xl max-w-4xl mx-auto"
-				quoteSize={112}
-			/>
+			<div class="testimonial-slider">
+				<button class="slider-arrow slider-prev" aria-label="Previous testimonial">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<polyline points="15 18 9 12 15 6"></polyline>
+					</svg>
+				</button>
+				
+				<div class="testimonial-slides">
+					{testimonials.map((testimonial, index) => (
+						<div class="testimonial-slide" data-index={index}>
+							<Testimonial
+								blockquote={testimonial.blockquote}
+								figcaption={testimonial.figcaption}
+								cite={testimonial.cite}
+								align="center"
+								size="4xl"
+								mobileSize="2xl"
+								classes="!leading-tight font-bold xl:text-5xl max-w-4xl mx-auto"
+								quoteSize={112}
+							/>
+						</div>
+					))}
+				</div>
+				
+				<button class="slider-arrow slider-next" aria-label="Next testimonial">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<polyline points="9 18 15 12 9 6"></polyline>
+					</svg>
+				</button>
+				
+				<div class="slider-controls">
+					<div class="slider-dots">
+						{testimonials.map((_, index) => (
+							<button class="slider-dot" data-index={index} aria-label={`Go to slide ${index + 1}`}></button>
+						))}
+					</div>
+				</div>
+			</div>
 		</Col>
 	</Row>
 </Section>
+
+<style>
+	.testimonial-slider {
+		position: relative;
+		overflow: hidden;
+		padding: 0 2rem;
+	}
+	
+	.testimonial-slides {
+		display: flex;
+		transition: transform 0.5s ease-in-out;
+		min-height: 300px; /* Set minimum height for consistent testimonial heights */
+	}
+	
+	.testimonial-slide {
+		flex: 0 0 100%;
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.testimonial-slide[data-active="true"] {
+		opacity: 1;
+		position: relative;
+	}
+	
+	.slider-controls {
+		display: flex;
+		justify-content: center;
+		margin-top: 1rem;
+	}
+	
+	.slider-dots {
+		display: flex;
+		gap: 0.5rem;
+	}
+	
+	.slider-dot {
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background-color: rgba(255, 255, 255, 0.3);
+		border: none;
+		padding: 0;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+	}
+	
+	.slider-dot[data-active="true"] {
+		background-color: white;
+	}
+	
+	.slider-arrow {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 10;
+		background: rgba(0, 0, 0, 0.3);
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		cursor: pointer;
+		transition: all 0.3s ease;
+	}
+	
+	.slider-arrow:hover {
+		background: rgba(0, 0, 0, 0.5);
+		border-color: rgba(255, 255, 255, 0.4);
+	}
+	
+	.slider-prev {
+		left: 10px;
+	}
+	
+	.slider-next {
+		right: 10px;
+	}
+	
+	@media (max-width: 640px) {
+		.slider-arrow {
+			width: 32px;
+			height: 32px;
+		}
+	}
+</style>
+
+<script>
+	function initSlider() {
+		const slides = document.querySelectorAll('.testimonial-slide');
+		const dots = document.querySelectorAll('.slider-dot');
+		const prevButton = document.querySelector('.slider-prev');
+		const nextButton = document.querySelector('.slider-next');
+		const slider = document.querySelector('.testimonial-slider');
+		
+		let currentSlide = 0;
+		let interval: NodeJS.Timer;
+		
+		// Set initial state
+		function setActiveSlide(index: number) {
+			// Remove active class from all slides and dots
+			slides.forEach(slide => slide.removeAttribute('data-active'));
+			dots.forEach(dot => dot.removeAttribute('data-active'));
+			
+			// Add active class to current slide and dot
+			slides[index].setAttribute('data-active', 'true');
+			dots[index].setAttribute('data-active', 'true');
+			
+			currentSlide = index;
+		}
+		
+		// Navigate to next slide
+		function nextSlide() {
+			let nextSlideIndex = (currentSlide + 1) % slides.length;
+			setActiveSlide(nextSlideIndex);
+		}
+		
+		// Navigate to previous slide
+		function prevSlide() {
+			let prevSlideIndex = (currentSlide - 1 + slides.length) % slides.length;
+			setActiveSlide(prevSlideIndex);
+		}
+		
+		// Initialize slider
+		setActiveSlide(0);
+		
+		// Auto-advance slides
+		function startAutoplay() {
+			interval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+		}
+		
+		function stopAutoplay() {
+			clearInterval(interval);
+		}
+		
+		// Add click event to dots
+		dots.forEach((dot, index) => {
+			dot.addEventListener('click', () => {
+				setActiveSlide(index);
+				stopAutoplay();
+				startAutoplay();
+			});
+		});
+		
+		// Add click events to navigation arrows
+		prevButton?.addEventListener('click', () => {
+			prevSlide();
+			stopAutoplay();
+			startAutoplay();
+		});
+		
+		nextButton?.addEventListener('click', () => {
+			nextSlide();
+			stopAutoplay();
+			startAutoplay();
+		});
+		
+			// Start autoplay
+		startAutoplay();
+		
+		// Pause autoplay on hover
+		slider?.addEventListener('mouseenter', stopAutoplay);
+		slider?.addEventListener('mouseleave', startAutoplay);
+		
+		// Recalculate height after slides are loaded
+		window.addEventListener('load', adjustSliderHeight);
+		window.addEventListener('resize', adjustSliderHeight);
+		
+		function adjustSliderHeight() {
+			// Find the tallest slide and set all slides to that height
+			let maxHeight = 0;
+			
+			// First set all slides to auto height to get their natural height
+			slides.forEach((slide) => {
+				const slideElement = slide as HTMLElement;
+				slideElement.style.height = 'auto';
+			});
+			
+			// Calculate max height
+			slides.forEach((slide) => {
+				const slideElement = slide as HTMLElement;
+				const slideHeight = slideElement.offsetHeight;
+				maxHeight = Math.max(maxHeight, slideHeight);
+			});
+			
+			// Set min-height on the container
+			const slidesContainer = document.querySelector('.testimonial-slides') as HTMLElement;
+			if (slidesContainer) {
+				slidesContainer.style.minHeight = `${maxHeight}px`;
+			}
+		}
+		
+		// Initial height adjustment
+		setTimeout(adjustSliderHeight, 100);
+	}
+	
+	// Initialize when DOM is ready
+	document.addEventListener('DOMContentLoaded', initSlider);
+</script>

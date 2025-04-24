@@ -108,8 +108,8 @@ const savedNavActions = navActions.map((action) => ({
 			<!-- Navigation action buttons -->
 			<div class="header__actions">
 				{
-					savedNavActions.map((action) => (
-						<Button classes="flex-auto" size={action.size} style={action.style} modal="signup">
+					savedNavActions.map((action) => (/*modal="signup"*/
+						<Button classes="flex-auto" size={action.size} style={action.style} >
 							{action.name}
 						</Button>
 					))
