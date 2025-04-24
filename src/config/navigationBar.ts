@@ -34,33 +34,33 @@ export interface NavData {
 export const navigationBarData: NavData = {
 	logo: {
 		src: '/logo.svg',
-		alt: 'youMIS?',
-		text: 'youMIS?'
+		alt: 'youMIS',
+		text: 'youMIS'
 	},
 	navItems: [
 		{ name: 'Home', link: '/' },
-		{ name: 'MIS', link: '/' },
+		{ name: 'MIS', link: '#' },
 		{
 			name: 'Courses',
 			link: '#',
 			submenu: [
-				{ name: 'Course 1', link: '/' },
+				{ name: 'Course 1', link: '#' },
 				{ name: 'Course 2', link: '/' },
 				{ name: 'Course 3', link: '/' },
 				{ name: 'Course 4', link: '/' }
 			]
 		},
-		{ name: 'Blog', link: '/' },
-		{ name: 'About', link: '/' }
+		{ name: 'Blog', link: '/blog' },
+		{ name: 'About', link: '#' }
 	],
-	navActions: [{ name: 'Career Test', link: '/', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Career Test', link: '#', style: 'primary', size: 'lg' }]
 }
 /*
 export const navigationBarData: NavData = {
 	logo: {
 		src: '/logo.svg',
-		alt: 'youMIS?',
-		text: 'youMIS?'
+		alt: 'youMIS',
+		text: 'youMIS'
 	},
 	navItems: [
 		{ name: 'Home', link: '/' },

@@ -35,13 +35,13 @@ export interface FooterData {
 
 export const footerNavigationData: FooterData = {
 	footerAbout: {
-		title: 'youMIS?',
+		title: 'youMIS',
 		aboutText:
 			'Some text',
 		logo: {
 			src: '/logo.jpeg',
 			alt: 'logo',
-			text: 'youMIS?'
+			text: 'youMIS'
 		}
 	},
 	footerColumns: [
