@@ -201,7 +201,18 @@ const {
 </style>
 
 <script>
+	declare global {
+		interface Window {
+			testimonialInterval?: NodeJS.Timer;
+		}
+	}
+
 	function initSlider() {
+		// Clear any existing intervals first
+		if (window.testimonialInterval) {
+			clearInterval(window.testimonialInterval);
+		}
+
 		const slides = document.querySelectorAll('.testimonial-slide');
 		const dots = document.querySelectorAll('.slider-dot');
 		const prevButton = document.querySelector('.slider-prev');
@@ -209,7 +220,6 @@ const {
 		const slider = document.querySelector('.testimonial-slider');
 		
 		let currentSlide = 0;
-		let interval: NodeJS.Timer;
 		
 		// Set initial state
 		function setActiveSlide(index: number) {
@@ -241,11 +251,13 @@ const {
 		
 		// Auto-advance slides
 		function startAutoplay() {
-			interval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+			window.testimonialInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
 		}
 		
 		function stopAutoplay() {
-			clearInterval(interval);
+			if (window.testimonialInterval) {
+				clearInterval(window.testimonialInterval);
+			}
 		}
 		
 		// Add click event to dots
@@ -270,7 +282,7 @@ const {
 			startAutoplay();
 		});
 		
-			// Start autoplay
+		// Start autoplay
 		startAutoplay();
 		
 		// Pause autoplay on hover
@@ -278,37 +290,53 @@ const {
 		slider?.addEventListener('mouseleave', startAutoplay);
 		
 		// Recalculate height after slides are loaded
-		window.addEventListener('load', adjustSliderHeight);
-		window.addEventListener('resize', adjustSliderHeight);
-		
-		function adjustSliderHeight() {
-			// Find the tallest slide and set all slides to that height
-			let maxHeight = 0;
-			
-			// First set all slides to auto height to get their natural height
-			slides.forEach((slide) => {
-				const slideElement = slide as HTMLElement;
-				slideElement.style.height = 'auto';
-			});
-			
-			// Calculate max height
-			slides.forEach((slide) => {
-				const slideElement = slide as HTMLElement;
-				const slideHeight = slideElement.offsetHeight;
-				maxHeight = Math.max(maxHeight, slideHeight);
-			});
-			
-			// Set min-height on the container
-			const slidesContainer = document.querySelector('.testimonial-slides') as HTMLElement;
-			if (slidesContainer) {
-				slidesContainer.style.minHeight = `${maxHeight}px`;
-			}
-		}
-		
-		// Initial height adjustment
-		setTimeout(adjustSliderHeight, 100);
+		adjustSliderHeight();
 	}
 	
-	// Initialize when DOM is ready
+	function adjustSliderHeight() {
+		const slides = document.querySelectorAll('.testimonial-slide');
+		let maxHeight = 0;
+		
+		// First set all slides to auto height
+		slides.forEach((slide) => {
+			const slideElement = slide as HTMLElement;
+			slideElement.style.height = 'auto';
+		});
+		
+		// Calculate max height
+		slides.forEach((slide) => {
+			const slideElement = slide as HTMLElement;
+			const slideHeight = slideElement.offsetHeight;
+			maxHeight = Math.max(maxHeight, slideHeight);
+		});
+		
+		// Set min-height on the container
+		const slidesContainer = document.querySelector('.testimonial-slides') as HTMLElement;
+		if (slidesContainer) {
+			slidesContainer.style.minHeight = `${maxHeight}px`;
+		}
+	}
+
+	// Initialize on page load
 	document.addEventListener('DOMContentLoaded', initSlider);
+	
+	// Initialize on view transitions
+	document.addEventListener('astro:page-load', initSlider);
+	
+	// Cleanup on view transitions
+	document.addEventListener('astro:before-swap', () => {
+		if (window.testimonialInterval) {
+			clearInterval(window.testimonialInterval);
+		}
+	});
+	
+	// Handle window resize
+	window.addEventListener('resize', adjustSliderHeight);
+</script>
+
+<script>
+	// Add TypeScript interface for Window
+	interface Window {
+		testimonialInterval?: NodeJS.Timer;
+	}
 </script>

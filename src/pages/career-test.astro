@@ -104,29 +104,33 @@ const totalQuestions = questions.questions.length;
 
 function showQuestion(index) {
     document.querySelectorAll('.question-container').forEach(q => q.classList.add('hidden'));
-    document.querySelector(`[data-question="${index}"]`).classList.remove('hidden');
-    
-    // Update progress bar
-    const progress = ((index + 1) / totalQuestions) * 100;
-    document.querySelector('#progress div').style.width = `${progress}%`;
-    
-    // Update buttons
-    document.getElementById('prevBtn').style.display = index === 0 ? 'none' : 'block';
-    document.getElementById('nextBtn').style.display = index === totalQuestions - 1 ? 'none' : 'block';
-    document.getElementById('submitBtn').style.display = index === totalQuestions - 1 ? 'block' : 'none';
+    const questionElement = document.querySelector(`[data-question="${index}"]`);
+    if (questionElement) {
+        questionElement.classList.remove('hidden');
+        
+        // Update progress bar
+        const progress = ((index + 1) / totalQuestions) * 100;
+        document.querySelector('#progress div').style.width = `${progress}%`;
+        
+        // Update buttons
+        document.getElementById('prevBtn').style.display = index === 0 ? 'none' : 'block';
+        document.getElementById('nextBtn').style.display = index === totalQuestions - 1 ? 'none' : 'block';
+        document.getElementById('submitBtn').style.display = index === totalQuestions - 1 ? 'block' : 'none';
+    }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+function initializeQuiz() {
+    currentQuestion = 0;
     showQuestion(0);
     
-    document.getElementById('prevBtn').addEventListener('click', () => {
+    document.getElementById('prevBtn')?.addEventListener('click', () => {
         if (currentQuestion > 0) {
             currentQuestion--;
             showQuestion(currentQuestion);
         }
     });
     
-    document.getElementById('nextBtn').addEventListener('click', () => {
+    document.getElementById('nextBtn')?.addEventListener('click', () => {
         const currentInput = document.querySelector(`input[name="q${currentQuestion + 1}"]:checked`);
         if (!currentInput) {
             alert('Please select an answer before proceeding.');
@@ -138,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     
-    document.getElementById('quizForm').addEventListener('submit', async (e) => {
+    document.getElementById('quizForm')?.addEventListener('submit', async (e) => {
         e.preventDefault();
         
         const answers = [];
@@ -175,5 +179,11 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('An error occurred. Please try again.');
         }
     });
-});
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', initializeQuiz);
+
+// Initialize on view transitions
+document.addEventListener('astro:page-load', initializeQuiz);
 </script>
