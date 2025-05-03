@@ -5,6 +5,9 @@ import Layout from '../layouts/Layout.astro'
 // - UI
 import SidebarContent from '../components/blocks/basic/StickySidebar.astro'
 import Hero from '../components/blocks/hero/PageHeader.astro'
+import chartImage from '../assets/chart.png'
+import { Image } from 'astro:assets'
+
 
 // Content
 // - SEO
@@ -119,6 +122,7 @@ const header = {
 					</ul>
 				</div>
 			</div>
+			<Image src={chartImage} alt={"chart"}/>
 		</div>
 	</SidebarContent>
 
