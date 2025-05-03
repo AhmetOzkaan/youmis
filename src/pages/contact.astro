@@ -1,35 +1,53 @@
 ---
 // Components
-// - Layout
 import Layout from '../layouts/Layout.astro'
-// - UI
-import FormHero from '../components/blocks/hero/ContactHero.astro'
-import CTA from '../components/blocks/CTA/BasicDark.astro'
-import ContactCards from '../components/blocks/contact/ContactCards.astro'
-import SocialProof from '../components/blocks/socialproof/Basic.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
 
 // Content
 // - SEO
 const SEO = {
-	title: 'Foxi | Get in Touch with Us',
+	title: 'youMIS | Contact Us',
 	description:
-		'Have questions or need assistance? Contact Foxi today for support, inquiries, or feedback. Our team is here to help you make the most of your Foxi experience.'
+		'Get in touch with the YouMIS team. We are here to answer your questions and value your feedback.'
 }
 // - Page Header
 const header = {
-	title: 'Get Answers to Your <strong>Foxi</strong> Questions.',
-	text: "Whether you have a question, need support, or just want to share your feedback, we're all ears. Reach out to us and we'll get back to you as soon as possible."
+	title: 'Contact <strong>Us!</strong>',
+	text: 'As the "YouMIS?" team, communicating with you is very important to us. We are here to answer your questions, evaluate your feedback, and provide the best service.'
 }
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
-	<FormHero
-		title={header.title}
-		text={header.text}
-		id="contact"
-		classes="bg-neutral-50 dark:bg-neutral-950/80"
-	/>
-	<ContactCards classes="dark:bg-neutral-950/80" />
-	<SocialProof classes="dark:bg-neutral-950/80" />
-	<CTA />
+	<Hero title={header.title} text={header.text} />
+	
+	<div class="bg-neutral-50 dark:bg-neutral-950/80 pb-16">
+		<div class="container mx-auto px-4">
+			<div class="max-w-3xl mx-auto text-center space-y-8">
+				<div class="space-y-4">
+					<h2 class="text-2xl font-semibold text-neutral-900 dark:text-white">Contact</h2>
+					<p class="text-lg text-neutral-600 dark:text-neutral-400">
+						<a href="mailto:youmis.ybu@gmail.com" class="text-primary-600 hover:text-primary-700">youmis.ybu@gmail.com</a>
+					</p>
+				</div>
+
+				<div class="space-y-4">
+					<h2 class="text-2xl font-semibold text-neutral-900 dark:text-white">Social Media</h2>
+					<div class="space-y-2">
+						<p class="text-lg text-neutral-600 dark:text-neutral-400">
+							Instagram: <a href="https://instagram.com/youmis" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700">@youmis</a>
+						</p>
+						<p class="text-lg text-neutral-600 dark:text-neutral-400">
+							Twitter: <a href="https://twitter.com/youmis" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700">@youmis</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="mt-12">
+					<p class="text-lg text-neutral-600 dark:text-neutral-400">
+						Your ideas are valuable to us. Your feedback will help us improve our platform. Get in touch with us, and let's shape the career paths of the future together!
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </Layout>
