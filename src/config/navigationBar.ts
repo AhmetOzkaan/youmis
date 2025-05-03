@@ -1,6 +1,16 @@
 // Navigation Bar
 // ------------
 // Description: The navigation bar data for the website.
+
+import { z, getCollection } from 'astro:content'
+
+// Get course names for navigation
+const courses = await getCollection('courses')
+const courseSubmenu = courses.map(course => ({
+	name: course.data.title,
+	link: `/courses/${course.id}`
+}))
+
 export interface Logo {
 	src: string
 	alt: string
@@ -42,42 +52,11 @@ export const navigationBarData: NavData = {
 		{ name: 'MIS', link: '/mis' },
 		{
 			name: 'Courses',
-			link: '#',
-			submenu: [
-				{ name: 'Course 1', link: '#' },
-				{ name: 'Course 2', link: '/' },
-				{ name: 'Course 3', link: '/' },
-				{ name: 'Course 4', link: '/' }
-			]
+			link: '/courses',
+			submenu: courseSubmenu
 		},
 		{ name: 'Blog', link: '/blog' },
 		{ name: 'About', link: '#' }
 	],
 	navActions: [{ name: 'Career Test', link: '#', style: 'primary', size: 'lg' }]
 }
-/*
-export const navigationBarData: NavData = {
-	logo: {
-		src: '/logo.svg',
-		alt: 'youMIS',
-		text: 'youMIS'
-	},
-	navItems: [
-		{ name: 'Home', link: '/' },
-		{ name: 'MIS', link: '/pricing' },
-		{
-			name: 'Courses',
-			link: '#',
-			submenu: [
-				{ name: 'Blog', link: '/blog' },
-				{ name: 'Changelog', link: '/changelog' },
-				{ name: 'FAQ', link: '/faq' },
-				{ name: 'Terms', link: '/terms' }
-			]
-		},
-		{ name: 'Blog', link: '/contact' },
-		{ name: 'About', link: '/features' }
-	],
-	navActions: [{ name: 'Test', link: '/test', style: 'primary', size: 'lg' }]
-}
-*/
