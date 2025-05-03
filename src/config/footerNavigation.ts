@@ -37,7 +37,7 @@ export const footerNavigationData: FooterData = {
 	footerAbout: {
 		title: 'youMIS',
 		aboutText:
-			'Some text',
+				'Your AI-powered guide for navigating Management Information Systems education and career paths.',
 		logo: {
 			src: '/logo.jpeg',
 			alt: 'logo',
@@ -46,126 +46,49 @@ export const footerNavigationData: FooterData = {
 	},
 	footerColumns: [
 		{
-			category: 'Product',
+			category: 'Navigation',
 			subCategories: [
 				{
-					subCategory: 'Features',
+					subCategory: 'Home',
 					subCategoryLink: '/'
 				},
 				{
-					subCategory: 'FAQ',
-					subCategoryLink: '/'
+					subCategory: 'MIS',
+					subCategoryLink: '/mis'
 				},
 				{
-					subCategory: 'Pricing',
-					subCategoryLink: '/'
+					subCategory: 'Courses',
+					subCategoryLink: '/courses'
 				},
 				{
-					subCategory: 'Changelog',
-					subCategoryLink: '/'
-				},
-				{
-					subCategory: 'Terms',
-					subCategoryLink: '/'
+					subCategory: 'Blog',
+					subCategoryLink: '/blog'
 				}
 			]
 		},
 		{
-			category: 'About us',
+			category: 'About Us',
 			subCategories: [
 				{
-					subCategory: 'About us',
-					subCategoryLink: '/'
+					subCategory: 'About',
+					subCategoryLink: '/about'
 				},
-				{
-					subCategory: 'News',
-					subCategoryLink: '/'
-				},
-				{
-					subCategory: 'Careers',
-					subCategoryLink: '/'
-				}
-			]
-		},
-		{
-			category: 'Get in touch',
-			subCategories: [
 				{
 					subCategory: 'Contact',
-					subCategoryLink: '/'
-				},
+					subCategoryLink: '/contact'
+				}
+			]
+		},
+		{
+			category: 'Tools',
+			subCategories: [
 				{
-					subCategory: 'Support',
-					subCategoryLink: '/'
-				},
-				{
-					subCategory: 'Join us',
-					subCategoryLink: '/'
+					subCategory: 'Career Test',
+					subCategoryLink: '#'
 				}
 			]
 		}
 	],
-	/*footerColumns: [
-		{
-			category: 'Product',
-			subCategories: [
-				{
-					subCategory: 'Features',
-					subCategoryLink: '/features'
-				},
-				{
-					subCategory: 'FAQ',
-					subCategoryLink: '/faq'
-				},
-				{
-					subCategory: 'Pricing',
-					subCategoryLink: '/pricing'
-				},
-				{
-					subCategory: 'Changelog',
-					subCategoryLink: '/changelog'
-				},
-				{
-					subCategory: 'Terms',
-					subCategoryLink: '/terms'
-				}
-			]
-		},
-		{
-			category: 'About us',
-			subCategories: [
-				{
-					subCategory: 'About us',
-					subCategoryLink: '/'
-				},
-				{
-					subCategory: 'News',
-					subCategoryLink: '/blog'
-				},
-				{
-					subCategory: 'Careers',
-					subCategoryLink: '/blog'
-				}
-			]
-		},
-		{
-			category: 'Get in touch',
-			subCategories: [
-				{
-					subCategory: 'Contact',
-					subCategoryLink: '/contact'
-				},
-				{
-					subCategory: 'Support',
-					subCategoryLink: '/contact'
-				},
-				{
-					subCategory: 'Join us',
-					subCategoryLink: '/contact'
-				}
-			]
-		}
-	],*/
 	subFooter: {
 		copywriteText: `© youMIS ${new Date().getFullYear()}.`
 	}
