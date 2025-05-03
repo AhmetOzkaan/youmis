@@ -109,20 +109,22 @@ const savedNavActions = navActions.map((action) => ({
 			<div class="header__actions">
 				{
 					savedNavActions.map((action) => (
-						<Button classes="flex-auto" size={action.size} style={action.style} >
-							{action.link ? (
-								<a
-									href={action.link}
-									class="flex items-center gap-2"
-									aria-label={action.name}
-									rel="noopener noreferrer"
-								>
+						action.link ? (
+							<a
+								href={action.link}
+								class="flex items-center gap-2"
+								aria-label={action.name}
+								rel="noopener noreferrer"
+							>
+								<Button size={action.size} style={action.style} >
 									{action.name}
-								</a>
-							) : (
-								action.name
-							)}
-						</Button>
+								</Button>
+							</a>
+						) : (
+							<Button size={action.size} style={action.style} >
+								{action.name}
+							</Button>
+						)
 					))
 				}
 			</div>
