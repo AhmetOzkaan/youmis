@@ -84,7 +84,7 @@ export const footerNavigationData: FooterData = {
 			subCategories: [
 				{
 					subCategory: 'Career Test',
-					subCategoryLink: '#'
+					subCategoryLink: '/career-test'
 				}
 			]
 		}
