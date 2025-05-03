@@ -1,0 +1,158 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import SidebarContent from '../components/blocks/basic/StickySidebar.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'youMIS | Management Information Systems',
+	description:
+		'Learn about Management Information Systems (MIS) - a discipline that integrates business management and information technology. Discover career paths, course content, and why you should choose MIS.'
+}
+// - Page Header
+const header = {
+	title: 'Management Information Systems<br><strong>Your Future Career</strong>',
+	text: 'Discover how MIS combines business management with technology for a promising career.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+
+	<SidebarContent>
+		<div slot="sidebar">
+			<h3>Introduction to MIS</h3>
+			<p>
+				Understand what Management Information Systems is and how it integrates business and technology.
+			</p>
+		</div>
+		<div class="basic-text">
+			<h4>What is Management Information Systems?</h4>
+			<p>
+				The Management Information Systems (MIS) department is a discipline that integrates business management and information technology. This department teaches students how information systems can be effectively used in businesses while providing comprehensive knowledge in areas such as decision support systems, process analysis, data management, and digital transformation.
+			</p>
+			<p>
+				Through the MIS program, students learn how to strategically manage the technology infrastructures of businesses and how to gain a competitive advantage with solutions appropriate for the requirements of the digital age.
+			</p>
+		</div>
+	</SidebarContent>
+
+	<SidebarContent classes="bg-neutral-50 dark:bg-neutral-900">
+		<div slot="sidebar">
+			<h3>Educational Process</h3>
+			<p>
+				Learn about the MIS education journey and what to expect during your studies.
+			</p>
+		</div>
+		<div class="basic-text">
+			<h4>Program Structure</h4>
+			<p>
+				The Management Information Systems department in Turkey admits students based on the EA (Equal Weight) score type from the YKS (Higher Education Institutions Examination). The MIS undergraduate program consists of a 4-year educational period, which may extend to 5 years with a preparatory class at some universities.
+			</p>
+
+			<h4>Course Content</h4>
+			<h5>Management Field:</h5>
+			<ul>
+				<li>Business Administration, Accounting, Economics, Statistics</li>
+				<li>Project Management, Strategic Planning, Entrepreneurship, Leadership</li>
+			</ul>
+
+			<h5>Information Technology Field:</h5>
+			<ul>
+				<li>Programming, Coding</li>
+				<li>Database Management</li>
+				<li>Web Development, Mobile Application Development</li>
+				<li>ERP Systems, Decision Support Systems</li>
+				<li>Computer Networks, Operating Systems, and Security</li>
+			</ul>
+		</div>
+	</SidebarContent>
+
+	<SidebarContent>
+		<div slot="sidebar">
+			<h3>Career Opportunities</h3>
+			<p>
+				Explore the diverse career paths available to MIS graduates.
+			</p>
+		</div>
+		<div class="basic-text">
+			<h4>Career Paths</h4>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+				<div>
+					<h5>Business Analysis</h5>
+					<ul>
+						<li>Business Analyst</li>
+						<li>Systems Analyst</li>
+						<li>Process Improvement Specialist</li>
+						<li>Enterprise Architect</li>
+					</ul>
+				</div>
+				<div>
+					<h5>Software Development</h5>
+					<ul>
+						<li>Software Developer</li>
+						<li>Web Developer</li>
+						<li>Application Developer</li>
+						<li>Test Specialist / QA Engineer</li>
+					</ul>
+				</div>
+				<div>
+					<h5>Data Analytics</h5>
+					<ul>
+						<li>Data Analyst</li>
+						<li>Business Intelligence Specialist</li>
+						<li>Reporting Specialist</li>
+						<li>Data Engineer</li>
+					</ul>
+				</div>
+				<div>
+					<h5>Project Management</h5>
+					<ul>
+						<li>Project Manager</li>
+						<li>PMO Specialist</li>
+						<li>Agile Coach</li>
+						<li>Scrum Master</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</SidebarContent>
+
+	<SidebarContent classes="bg-neutral-50 dark:bg-neutral-900">
+		<div slot="sidebar">
+			<h3>Why Choose MIS?</h3>
+			<p>
+				Discover the benefits and opportunities that come with choosing MIS as your career path.
+			</p>
+		</div>
+		<div class="basic-text">
+			<h4>Key Benefits</h4>
+			<ul>
+				<li>Dual competence in technology and business</li>
+				<li>Diverse job opportunities across sectors</li>
+				<li>Strong technological infrastructure knowledge</li>
+				<li>Career path aligned with digital innovation</li>
+				<li>Development of analytical and critical thinking skills</li>
+				<li>Data-driven decision-making capabilities</li>
+				<li>Practical, hands-on learning experience</li>
+				<li>International career opportunities</li>
+			</ul>
+
+			<h4>Who Should Choose MIS?</h4>
+			<p>
+				MIS is ideal for individuals who:
+			</p>
+			<ul>
+				<li>Have strong problem-solving and analytical skills</li>
+				<li>Are passionate about technology and business</li>
+				<li>Enjoy project management and leadership roles</li>
+				<li>Are interested in digital transformation</li>
+				<li>Want to work in a dynamic, evolving field</li>
+			</ul>
+		</div>
+	</SidebarContent>
+</Layout>
