@@ -14,6 +14,20 @@ const blog = defineCollection({
 		})
 })
 
+const courses = defineCollection({
+	loader: glob({ pattern: '**/*.md', base: './src/content/courses' }),
+	schema: () =>
+		z.object({
+			title: z.string(),
+			description: z.string(),
+			pubDate: z.date(),
+			image: z.string(),
+			author: z.string(),
+			videoUrl: z.string().optional()
+		})
+})
+
 export const collections = {
-	blog
+	blog,
+	courses
 }
