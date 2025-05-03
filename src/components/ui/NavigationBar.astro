@@ -108,9 +108,20 @@ const savedNavActions = navActions.map((action) => ({
 			<!-- Navigation action buttons -->
 			<div class="header__actions">
 				{
-					savedNavActions.map((action) => (/*modal="signup"*/
+					savedNavActions.map((action) => (
 						<Button classes="flex-auto" size={action.size} style={action.style} >
-							{action.name}
+							{action.link ? (
+								<a
+									href={action.link}
+									class="flex items-center gap-2"
+									aria-label={action.name}
+									rel="noopener noreferrer"
+								>
+									{action.name}
+								</a>
+							) : (
+								action.name
+							)}
 						</Button>
 					))
 				}

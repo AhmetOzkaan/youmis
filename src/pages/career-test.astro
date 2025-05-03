@@ -1,0 +1,179 @@
+---
+// Components
+import Layout from '../layouts/Layout.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import questions from '../data/json-files/career-test-questions.json'
+
+// Content
+// - SEO
+const SEO = {
+    title: 'youMIS | Career Test',
+    description: 'Take our career test to discover which MIS career path suits you best.'
+}
+
+// - Page Header
+const header = {
+    title: 'Discover Your <strong>MIS Career Path</strong>',
+    text: 'Answer these questions to help us understand your interests and suggest the best career path for you.'
+}
+
+// Answer options
+const answers = [
+    { text: "Strongly Agree", value: 5 },
+    { text: "Agree", value: 4 },
+    { text: "Neutral", value: 3 },
+    { text: "Disagree", value: 2 },
+    { text: "Strongly Disagree", value: 1 }
+]
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+    <Hero title={header.title} text={header.text} />
+    
+    <div class="py-12 bg-neutral-50 dark:bg-neutral-950/80">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="bg-white dark:bg-neutral-900 rounded-xl shadow-lg p-8">
+                <div id="careerTest" class="space-y-8">
+                    <div id="progress" class="w-full bg-neutral-200 dark:bg-neutral-700 rounded-full h-2.5">
+                        <div class="bg-primary-600 h-2.5 rounded-full transition-all duration-300 ease-in-out" style="width: 0%"></div>
+                    </div>
+                    
+                    <form id="quizForm" class="space-y-8">
+                        {questions.questions.map((q, index) => (
+                            <div class="question-container hidden" data-question={index}>
+                                <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-4">
+                                    {q.question}
+                                </h3>
+                                <div class="space-y-3">
+                                    {answers.map((answer, i) => (
+                                        <label class="flex items-center p-4 border rounded-lg cursor-pointer transition-colors hover:bg-neutral-50 dark:hover:bg-neutral-800 group">
+                                            <input 
+                                                type="radio" 
+                                                name={`q${q.id}`} 
+                                                value={answer.value}
+                                                class="w-4 h-4 text-primary-600 border-neutral-300 focus:ring-primary-500"
+                                                required
+                                            />
+                                            <span class="ml-3 text-neutral-700 dark:text-neutral-300 group-hover:text-neutral-900 dark:group-hover:text-white">
+                                                {answer.text}
+                                            </span>
+                                        </label>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                        
+                        <div class="flex justify-between pt-6">
+                            <button 
+                                type="button" 
+                                id="prevBtn"
+                                class="hidden px-6 py-2 text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white mr-auto"
+                            >
+                                Previous
+                            </button>
+                            <button 
+                                type="button" 
+                                id="nextBtn"
+                                class="ml-auto px-6 py-2 text-sm font-medium text-white bg-primary-600 rounded-lg hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+                            >
+                                Next
+                            </button>
+                            <button 
+                                type="submit" 
+                                id="submitBtn"
+                                class="hidden ml-auto px-6 py-2 text-sm font-medium text-white bg-primary-600 rounded-lg hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+                            >
+                                Get Results
+                            </button>
+                        </div>
+                    </form>
+
+                    <div id="results" class="hidden space-y-6">
+                        <h3 class="text-2xl font-bold text-neutral-900 dark:text-white">Your Results</h3>
+                        <div id="resultContent" class="prose dark:prose-invert"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>
+
+<script define:vars={{ questions }}>
+let currentQuestion = 0;
+const totalQuestions = questions.questions.length;
+
+function showQuestion(index) {
+    document.querySelectorAll('.question-container').forEach(q => q.classList.add('hidden'));
+    document.querySelector(`[data-question="${index}"]`).classList.remove('hidden');
+    
+    // Update progress bar
+    const progress = ((index + 1) / totalQuestions) * 100;
+    document.querySelector('#progress div').style.width = `${progress}%`;
+    
+    // Update buttons
+    document.getElementById('prevBtn').style.display = index === 0 ? 'none' : 'block';
+    document.getElementById('nextBtn').style.display = index === totalQuestions - 1 ? 'none' : 'block';
+    document.getElementById('submitBtn').style.display = index === totalQuestions - 1 ? 'block' : 'none';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    showQuestion(0);
+    
+    document.getElementById('prevBtn').addEventListener('click', () => {
+        if (currentQuestion > 0) {
+            currentQuestion--;
+            showQuestion(currentQuestion);
+        }
+    });
+    
+    document.getElementById('nextBtn').addEventListener('click', () => {
+        const currentInput = document.querySelector(`input[name="q${currentQuestion + 1}"]:checked`);
+        if (!currentInput) {
+            alert('Please select an answer before proceeding.');
+            return;
+        }
+        if (currentQuestion < totalQuestions - 1) {
+            currentQuestion++;
+            showQuestion(currentQuestion);
+        }
+    });
+    
+    document.getElementById('quizForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const answers = [];
+        for (let i = 1; i <= totalQuestions; i++) {
+            const answer = document.querySelector(`input[name="q${i}"]:checked`);
+            if (!answer) {
+                alert('Please answer all questions before submitting.');
+                return;
+            }
+            answers.push({"question": i, "answer": Number(answer.value)});
+        }
+        
+        try {
+            const response = await fetch('/api/career-test', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ answers }),
+            });
+            
+            const result = await response.json();
+            
+            document.getElementById('quizForm').classList.add('hidden');
+            document.getElementById('results').classList.remove('hidden');
+            document.getElementById('resultContent').innerHTML = `
+                <h4 class="text-xl font-semibold mb-4">${result.title}</h4>
+                <p class="mb-6">${result.description}</p>
+                <a href="${result.courseLink}" class="inline-block px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors">
+                    View Recommended Course
+                </a>
+            `;
+        } catch (error) {
+            alert('An error occurred. Please try again.');
+        }
+    });
+});
+</script>

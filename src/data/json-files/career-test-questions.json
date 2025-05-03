@@ -1,0 +1,16 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "I enjoy solving complex problems by breaking them down into smaller parts"
+    },
+    {
+      "id": 2,
+      "question": "I prefer working with data and numbers over working with people"
+    },
+    {
+      "id": 3,
+      "question": "I am good at explaining technical concepts to non-technical people"
+    }
+  ]
+}

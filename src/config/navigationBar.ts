@@ -59,5 +59,5 @@ export const navigationBarData: NavData = {
 		{ name: 'About', link: '/about' },
 		{ name: 'Contact', link: '/contact' }
 	],
-	navActions: [{ name: 'Career Test', link: '#', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Career Test', link: '/career-test', style: 'primary', size: 'lg' }]
 }
