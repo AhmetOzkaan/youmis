@@ -56,7 +56,7 @@ export const navigationBarData: NavData = {
 			submenu: courseSubmenu
 		},
 		{ name: 'Blog', link: '/blog' },
-		{ name: 'About', link: '#' }
+		{ name: 'About', link: '/about' }
 	],
 	navActions: [{ name: 'Career Test', link: '#', style: 'primary', size: 'lg' }]
 }
