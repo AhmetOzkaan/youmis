@@ -1,72 +1,71 @@
 ---
-title: "Veri Analitiği"
-description: "Veri analitiği alanında temel kavramlardan ileri analiz tekniklerine kadar kendini geliştirebileceğin eğitim içerikleri. Bu kaynaklar sayesinde veriye dayalı düşünme becerilerini güçlendirebilir ve analitik dünyaya sağlam bir adım atabilirsin."
-image: "/blog/post-02-cover.png"
+title: "Data Analytics"
+description: "Educational content that will help you improve yourself from basic concepts to advanced analysis techniques in the field of data analytics. With these resources, you can strengthen your data-based thinking skills and take a solid step into the analytical world."
+image: "/courses/data-analytics.png"
 ---
+## 🎯 Educational Content
 
-## 🎯 Eğitim İçerikleri
-
-### YouTube Kaynakları
+### YouTube Resources
 
 #### Power BI
-- **🇹🇷 Türkçe Kaynak:** [Power BI Eğitimi](https://youtube.com/playlist?list=PLRNmLUMrFxHiM9OJhRywHlu6vHzwLoyLV)
-  *Temel kavramlardan ileri seviyeye Power BI kullanımı*
-- **🌍 İngilizce Kaynak:** [Power BI Tutorials](https://youtube.com/playlist?list=PLUaB-1hjhk8HqnmK0gQhfmIdCbxwoAoys)
+- **🇹🇷 Turkish Resource:** [Power BI Training](https://youtube.com/playlist?list=PLRNmLUMrFxHiM9OJhRywHlu6vHzwLoyLV)
+  *Power BI usage from basic concepts to advanced level*
+- **🌍 English Resource:** [Power BI Tutorials](https://youtube.com/playlist?list=PLUaB-1hjhk8HqnmK0gQhfmIdCbxwoAoys)
   *Comprehensive Power BI training with practical examples*
 
 #### MySQL
-- **🇹🇷 Türkçe Kaynak:** [MySQL Dersleri](https://youtube.com/playlist?list=PLrGQS8Gq-kkLdkdSaycy19hQJzwouvPTZ)
-  *Veritabanı yönetimi ve SQL sorguları*
-- **🌍 İngilizce Kaynak:** [MySQL Tutorial](https://youtube.com/playlist?list=PLZPZq0r_RZOMskz6MdsMOgxzheIyjo-BZ)
+- **🇹🇷 Turkish Resource:** [MySQL Lessons](https://youtube.com/playlist?list=PLrGQS8Gq-kkLdkdSaycy19hQJzwouvPTZ)
+  *Database management and SQL queries*
+- **🌍 English Resource:** [MySQL Tutorial](https://youtube.com/playlist?list=PLZPZq0r_RZOMskz6MdsMOgxzheIyjo-BZ)
   *Complete MySQL database management course*
 
 #### Excel
-- **🇹🇷 Türkçe Kaynak:** [Excel Eğitimi](https://youtube.com/playlist?list=PLdjjFHtXNzWlqmX3zdzYusKPRR3tqLP9T)
-  *Temel Excel'den ileri düzey kullanıma*
-- **🌍 İngilizce Kaynak:** [Excel Tutorials](https://youtube.com/playlist?list=PLoyECfvEFOjbdwpIOtm_8PFzB_CPAD2_H)
+- **🇹🇷 Turkish Resource:** [Excel Training](https://youtube.com/playlist?list=PLdjjFHtXNzWlqmX3zdzYusKPRR3tqLP9T)
+  *From basic Excel to advanced usage*
+- **🌍 English Resource:** [Excel Tutorials](https://youtube.com/playlist?list=PLoyECfvEFOjbdwpIOtm_8PFzB_CPAD2_H)
   *Advanced Excel techniques and data analysis*
 
-#### Veri Analitiği
-- **🇹🇷 Türkçe Kaynaklar:**
-  - [Veri Bilimi Dersleri](https://youtube.com/playlist?list=PLFPoldtY4Izf1ieUxIs8-bmQW-ci7Pn7t)
-    *Veri bilimi ve analitik düşünme temelleri*
-  - [Veri Analizi Eğitimi](https://youtu.be/ubpi51g-9Hk)
-    *Kapsamlı veri analizi teknikleri*
-- **🌍 İngilizce Kaynak:** [Data Analytics Course](https://youtube.com/playlist?list=PLEiEAq2VkUUKgEFXH1tBbHwq38oWYDScU)
+#### Data Analytics
+- **🇹🇷 Turkish Resources:**
+  - [Data Science Lessons](https://youtube.com/playlist?list=PLFPoldtY4Izf1ieUxIs8-bmQW-ci7Pn7t)
+    *Data science and analytical thinking fundamentals*
+  - [Data Analysis Training](https://youtu.be/ubpi51g-9Hk)
+    *Comprehensive data analysis techniques*
+- **🌍 English Resource:** [Data Analytics Course](https://youtube.com/playlist?list=PLEiEAq2VkUUKgEFXH1tBbHwq38oWYDScU)
   *Complete data analytics journey from basics to advanced*
 
-## 📚 Udemy Kursları
+## 📚 Udemy Courses
 
-### Başlangıç Seviyesi
-- **Power BI Temelleri**
-  *Sıfırdan Power BI öğrenin*
-  [Kursa Git ↗](https://www.udemy.com/course/power-bi-sfrdan-ileri-seviye-uygulamal-power-bi-kursu)
+### Beginner Level
+- **Power BI Fundamentals**
+  *Learn Power BI from scratch*
+  [Go to Course ↗](https://www.udemy.com/course/power-bi-sfrdan-ileri-seviye-uygulamal-power-bi-kursu)
 
-- **MySQL Başlangıç**
-  *Veritabanı yönetiminin temellerini öğrenin*
-  [Kursa Git ↗](https://www.udemy.com/course/sifirdan-ileri-seviyeye-mysql-egitimi)
+- **MySQL Beginner**
+  *Learn the fundamentals of database management*
+  [Go to Course ↗](https://www.udemy.com/course/sifirdan-ileri-seviyeye-mysql-egitimi)
 
-- **Excel Temel Eğitim**
-  *Excel'in temel özelliklerini öğrenin*
-  [Kursa Git ↗](https://www.udemy.com/course/bastan-sona-excel-ogren-en-cok-kullanilan-islevler)
+- **Excel Basic Training**
+  *Learn Excel's basic features*
+  [Go to Course ↗](https://www.udemy.com/course/bastan-sona-excel-ogren-en-cok-kullanilan-islevler)
 
-### İleri Seviye
+### Advanced Level
 - **Advanced Power BI**
-  *İleri seviye veri modelleme ve DAX*
-  [Kursa Git ↗](https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop)
+  *Advanced data modeling and DAX*
+  [Go to Course ↗](https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop)
 
 - **MySQL Masterclass**
-  *İleri seviye veritabanı yönetimi*
-  [Kursa Git ↗](https://www.udemy.com/course/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert)
+  *Advanced database management*
+  [Go to Course ↗](https://www.udemy.com/course/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert)
 
-- **Profesyonel Veri Analizi**
-  *Kapsamlı veri analizi projeleri*
-  [Kursa Git ↗](https://www.udemy.com/course/data-analysis-projects-using-sql-power-bi-tableau-excel)
+- **Professional Data Analysis**
+  *Comprehensive data analysis projects*
+  [Go to Course ↗](https://www.udemy.com/course/data-analysis-projects-using-sql-power-bi-tableau-excel)
 
-## 💡 İpuçları
+## 💡 Tips
 
-- Önce temel veri analizi kavramlarını öğrenin
-- Küçük veri setleriyle pratik yapın
-- Kendi analiz projelerinizi geliştirin
-- Veri görselleştirme becerilerinizi geliştirin
-- Online veri analizi topluluklarına katılın
+- First, learn basic data analysis concepts
+- Practice with small datasets
+- Develop your own analysis projects
+- Improve your data visualization skills
+- Join online data analysis communities

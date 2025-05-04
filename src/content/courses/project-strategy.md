@@ -1,84 +1,83 @@
 ---
-title: "Proje ve Strateji Yönetimi"
-description: "Proje ve strateji yönetimi alanında kendini geliştirmek, iş dünyasında planlama, uygulama ve karar alma süreçlerinde etkin rol almak için oldukça değerlidir. Bu eğitim içerikleriyle projeleri yönetme ve hedef odaklı ilerleme becerilerini geliştirebilirsin."
-image: "/blog/post-06-cover.png"
+title: "Project and Strategy Management"
+description: "Improving yourself in the field of project and strategy management is very valuable for taking an active role in planning, implementation and decision-making processes in the business world. With these training contents, you can develop your project management and goal-oriented progress skills."
+image: "/courses/project-management.png"
 ---
+## 🎯 Educational Content
 
-## 🎯 Eğitim İçerikleri
+### YouTube Resources
 
-### YouTube Kaynakları
-
-#### Proje Yönetimi Temelleri
-- **🇹🇷 Türkçe Kaynak:** [Proje Yönetimi Eğitimi](https://youtube.com/playlist?list=PLDUOF2Be-kzlHkPJpuvrLX6adNQSdonNd)
-  *Temel proje yönetimi metodolojileri ve uygulamaları*
-- **🌍 İngilizce Kaynak:** [Project Management Course](https://youtube.com/playlist?list=PLTZYG7bZ1u6puLWxUtqAjZkIB4dB_JFzk)
+#### Project Management Fundamentals
+- **🇹🇷 Turkish Resource:** [Project Management Training](https://youtube.com/playlist?list=PLDUOF2Be-kzlHkPJpuvrLX6adNQSdonNd)
+  *Basic project management methodologies and applications*
+- **🌍 English Resource:** [Project Management Course](https://youtube.com/playlist?list=PLTZYG7bZ1u6puLWxUtqAjZkIB4dB_JFzk)
   *Complete project management fundamentals*
 
-#### Agile ve Scrum
-- **🇹🇷 Türkçe Kaynaklar:**
-  - [Agile Metodoloji](https://youtu.be/7bcWycT3uKw)
-    *Agile proje yönetimi temelleri*
+#### Agile and Scrum
+- **🇹🇷 Turkish Resources:**
+  - [Agile Methodology](https://youtu.be/7bcWycT3uKw)
+    *Agile project management fundamentals*
   - [Scrum Framework](https://youtu.be/CRtzOuBKbAE)
-    *Scrum metodolojisi ve uygulamaları*
-- **🌍 İngilizce Kaynaklar:**
+    *Scrum methodology and applications*
+- **🌍 English Resources:**
   - [Agile Development](https://youtube.com/playlist?list=PLWPirh4EWFpF8LjfSxHPuTnyNhqhe4XDc)
     *Complete guide to Agile methodologies*
   - [Scrum Guide](https://youtube.com/playlist?list=PL9ooVrP1hQOF1nCUBIFxOSD80UYSsx4vq)
     *Professional Scrum framework implementation*
 
-#### Proje Yönetim Araçları
-- **🇹🇷 Türkçe Kaynaklar:**
-  - [Jira Kullanımı](https://youtube.com/playlist?list=PLDKAxwy5kogC9nAGwHc9s5QsFYVdGCUUG)
-    *Jira ile proje ve görev yönetimi*
-  - [MS Project Eğitimi](https://youtube.com/playlist?list=PLDBpqz38Lejp6G4QUPSD7_2tmrxaK-jiG)
-    *Microsoft Project ile proje planlama*
-- **🌍 İngilizce Kaynaklar:**
+#### Project Management Tools
+- **🇹🇷 Turkish Resources:**
+  - [Jira Usage](https://youtube.com/playlist?list=PLDKAxwy5kogC9nAGwHc9s5QsFYVdGCUUG)
+    *Project and task management with Jira*
+  - [MS Project Training](https://youtube.com/playlist?list=PLDBpqz38Lejp6G4QUPSD7_2tmrxaK-jiG)
+    *Project planning with Microsoft Project*
+- **🌍 English Resources:**
   - [Jira Tutorial](https://youtube.com/playlist?list=PLL34mf651faOpDaNGr4tt6FF_nUYb7ypt)
     *Advanced Jira administration and usage*
   - [MS Project Tutorial](https://youtube.com/playlist?list=PL-MQNpO8Wb7BW0ndTYmwWpLV-WjW_4wxV)
     *Complete Microsoft Project management*
 
-#### Stratejik Planlama
-- **🇹🇷 Türkçe Kaynaklar:**
-  - [SWOT Analizi](https://youtu.be/FcvuI9vc5tk)
-    *Stratejik analiz teknikleri*
-  - [Stratejik Planlama](https://youtu.be/AHHpaI9fxpQ)
-    *Stratejik planlama süreçleri*
-- **🌍 İngilizce Kaynak:** [Strategic Planning](https://youtu.be/VTH_WsyoEeM)
+#### Strategic Planning
+- **🇹🇷 Turkish Resources:**
+  - [SWOT Analysis](https://youtu.be/FcvuI9vc5tk)
+    *Strategic analysis techniques*
+  - [Strategic Planning](https://youtu.be/AHHpaI9fxpQ)
+    *Strategic planning processes*
+- **🌍 English Resource:** [Strategic Planning](https://youtu.be/VTH_WsyoEeM)
   *Strategic planning and management*
 
-## 📚 Udemy Kursları
+## 📚 Udemy Courses
 
-### Başlangıç Seviyesi
-- **Proje Yönetimi Temelleri**
-  *Temel proje yönetim metodolojilerini öğrenin*
-  [Kursa Git ↗](https://www.udemy.com/course/herkes-icin-proje-yonetimi-egitimi/)
+### Beginner Level
+- **Project Management Fundamentals**
+  *Learn basic project management methodologies*
+  [Go to Course ↗](https://www.udemy.com/course/herkes-icin-proje-yonetimi-egitimi/)
 
-- **Agile ve Scrum Başlangıç**
-  *Agile ve Scrum temellerini öğrenin*
-  [Kursa Git ↗](https://www.udemy.com/course/agile-cevik-proje-yonetimi-ve-scrum-metodolojisi/)
+- **Agile and Scrum Beginner**
+  *Learn Agile and Scrum fundamentals*
+  [Go to Course ↗](https://www.udemy.com/course/agile-cevik-proje-yonetimi-ve-scrum-metodolojisi/)
 
 - **Jira Fundamentals**
-  *Jira ile proje yönetiminin temellerini öğrenin*
-  [Kursa Git ↗](https://www.udemy.com/course/atlassian-jira-admin-egitimi/)
+  *Learn the fundamentals of project management with Jira*
+  [Go to Course ↗](https://www.udemy.com/course/atlassian-jira-admin-egitimi/)
 
-### İleri Seviye
+### Advanced Level
 - **Advanced Project Management**
-  *İleri seviye proje yönetim teknikleri*
-  [Kursa Git ↗](https://www.udemy.com/course/the-project-management-course-beginner-to-project-manager)
+  *Advanced project management techniques*
+  [Go to Course ↗](https://www.udemy.com/course/the-project-management-course-beginner-to-project-manager)
 
 - **Professional Scrum Master**
-  *PSM sertifikasyonuna hazırlık*
-  [Kursa Git ↗](https://www.udemy.com/course/scrum-master-preparation-mock-tests/)
+  *Preparation for PSM certification*
+  [Go to Course ↗](https://www.udemy.com/course/scrum-master-preparation-mock-tests/)
 
 - **Strategic Management**
-  *İleri seviye stratejik planlama*
-  [Kursa Git ↗](https://www.udemy.com/course/strategic-planning-strategic-thinking)
+  *Advanced strategic planning*
+  [Go to Course ↗](https://www.udemy.com/course/strategic-planning-strategic-thinking)
 
-## 💡 İpuçları
+## 💡 Tips
 
-- Proje yönetim metodolojilerini karşılaştırmalı öğrenin
-- Agile ve Scrum pratiklerini küçük projelerle uygulayın
-- Proje yönetim araçlarını aktif olarak kullanın
-- Stratejik düşünme becerilerinizi geliştirin
-- Ekip yönetimi ve iletişim becerilerinizi güçlendirin
+- Learn project management methodologies comparatively
+- Apply Agile and Scrum practices with small projects
+- Actively use project management tools
+- Develop your strategic thinking skills
+- Strengthen your team management and communication skills
