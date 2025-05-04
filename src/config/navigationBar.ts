@@ -44,17 +44,18 @@ export interface NavData {
 export const navigationBarData: NavData = {
 	logo: {
 		src: '/logo.svg',
-		alt: 'youMIS',
-		text: 'youMIS'
+		alt: 'youMIS?',
+		text: 'youMIS?'
 	},
 	navItems: [
 		{ name: 'Home', link: '/' },
 		{ name: 'MIS', link: '/mis' },
-		{
+		/*{
 			name: 'Courses',
 			link: '/courses',
 			submenu: courseSubmenu
-		},
+		},*/
+		{ name: 'Courses', link: '/courses' },
 		{ name: 'Blog', link: '/blog' },
 		{ name: 'About', link: '/about' },
 		{ name: 'Contact', link: '/contact' }

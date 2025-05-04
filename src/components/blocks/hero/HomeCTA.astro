@@ -28,29 +28,23 @@ const avatars = [
 ]
 ---
 
-<Section id="intro" padding="top" classes="bg-neutral-50 dark:bg-neutral-900">
+<Section id="intro" padding="top" classes="bg-neutral-50 dark:bg-neutral-900 min-h-screen flex items-center">
 	<Row>
 		<Col span="2" />
 		<Col span="8" align="center">
-			<ChipNotification radius="rounded-full" classes="mb-6">
-				<strong>30K+</strong> satisfied students
-				<AvatarGroup avatars={avatars} radius="rounded-full" slot="button" />
-			</ChipNotification>
-			<h1>Don't <strong>MISs</strong> Your Future!</h1>
+			<h1 class="text-7xl">Don't <strong>MISs</strong> Your Future!</h1>
 
-			<p class="pb-0 text-lg">Work smarter, not harder, with our innovative platform</p>
+			<p class="pb-0 text-lg">
+				Your AI-powered career guide designed for Management Information Systems students!
+				<br>
+				Discover your own strengths, start your journey right now with youMIS! 
+			</p>
 			<Button size="lg" link="/">Take the Career Test</Button>
 		</Col>
 		<Col span="2" />
 		<Col span="2" />
 		<Col span="8">
-			<Image
-				src={heroImage}
-				alt="Foxi. The tailwind astro theme"
-				class="translate-y-8 shadow-2xl shadow-neutral-200 dark:shadow-neutral-950"
-				format="webp"
-			/></Col
-		>
+		</Col>
 		<Col span="2" />
 	</Row>
 </Section>

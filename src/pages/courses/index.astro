@@ -15,28 +15,28 @@ import { getCollection } from 'astro:content'
 // Content
 // - SEO
 const SEO = {
-    title: 'youMIS | Courses for Management Information Systems Students',
+    title: 'youMIS? | Courses for Management Information Systems Students',
     description:
         "Access comprehensive courses and learning materials designed specifically for Management Information Systems students. Enhance your knowledge and skills with our curated educational content."
 }
 // - Page Header
 const header = {
-    title: '<strong>youMIS</strong> Courses.<br>Learn at Your Own Pace',
+    title: '<strong>youMIS?</strong> Courses',
+    subtitle: 'Learn at Your Own Place',
     text: 'Comprehensive learning resources to help MIS students master essential concepts, technologies, and industry practices.'
 }
 
 const allCourses = await getCollection('courses')
 ---
-
 <Layout title={SEO.title} description={SEO.description}>
-    <Hero title={header.title} text={header.text} />
+    <Hero title={header.title} subtitle={header.subtitle} text={header.text} />
     
     <section class="py-16 px-5 md:px-10">
         <div class="container mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {
                     allCourses.map((course) => (
-                        <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-all hover:shadow-xl">
+                        <div class="bg-neutral-50 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg transition-all hover:shadow-xl">
                             <div class="relative">
                                 <img 
                                     src={course.data.image} 
@@ -46,27 +46,17 @@ const allCourses = await getCollection('courses')
                             </div>
                             <div class="p-6">
                                 <h3 class="text-xl font-bold mb-2">
-                                    <a href={`/courses/${course.id}`} class="text-primary-600 dark:text-primary-400 hover:underline">
+                                    <a href={`/courses/${course.id}`} class="text-neutral-900 dark:text-neutral-100 hover:underline">
                                         {course.data.title}
                                     </a>
                                 </h3>
-                                <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
-                                    {new Date(course.data.pubDate).toLocaleDateString('en-US', {
-                                        year: 'numeric',
-                                        month: 'long',
-                                        day: 'numeric'
-                                    })}
-                                </p>
-                                <p class="text-gray-700 dark:text-gray-200 mb-4">
+                                <p class="text-neutral-700 dark:text-neutral-200 mb-4">
                                     {course.data.description}
                                 </p>
-                                <div class="flex justify-between items-center">
-                                    <span class="text-sm text-gray-500 dark:text-gray-400">
-                                        By {course.data.author}
-                                    </span>
+                                <div class="flex justify-end items-center">
                                     <a 
                                         href={`/courses/${course.id}`}
-                                        class="px-4 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition-colors"
+                                        class="px-4 py-2 bg-primary-600 hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-400 text-white rounded-md transition-colors"
                                     >
                                         View Course
                                     </a>

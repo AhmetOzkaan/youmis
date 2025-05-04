@@ -1,9 +1,7 @@
 ---
 title: "Yazılım Geliştirme"
 description: "Yazılım geliştirme alanında kendini geliştirebilmen için çeşitli seviyelerde hazırlanmış eğitim içerikleri. Programlamaya başlamak veya becerilerini ileri seviyeye taşımak için bu kaynaklardan faydalanabilirsin."
-pubDate: 2024-01-01
 image: "/blog/post-06-cover.png"
-author: "youMIS"
 ---
 
 ## 🎯 Eğitim İçerikleri

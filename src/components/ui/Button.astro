@@ -16,7 +16,7 @@
 // Props
 type Props = {
 	type?: 'link' | 'button' | 'submit' | 'reset'
-	size?: 'lg' | 'base' | 'sm'
+	size?: 'lg' | 'base' | 'sm' | 'xl' | '2xl'
 	link?: string
 	modal?: string
 	style?: 'primary' | 'secondary' | 'neutral'
@@ -72,9 +72,16 @@ const {
 	.button {
 		@apply inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded font-bold tracking-wide transition duration-300 focus-visible:outline-none disabled:cursor-not-allowed disabled:shadow-none;
 	}
-
 	.button--lg {
 		@apply h-12 px-6 text-sm [&.button--elevated]:shadow-lg [&.button--elevated]:hover:shadow-md [&.button--elevated]:focus:shadow-md;
+	}
+
+	.button--xl {
+		@apply h-14 px-8 text-base [&.button--elevated]:shadow-xl [&.button--elevated]:hover:shadow-lg [&.button--elevated]:focus:shadow-lg;
+	}
+
+	.button--2xl {
+		@apply h-16 px-10 text-lg [&.button--elevated]:shadow-2xl [&.button--elevated]:hover:shadow-xl [&.button--elevated]:focus:shadow-xl;
 	}
 
 	.button--base {

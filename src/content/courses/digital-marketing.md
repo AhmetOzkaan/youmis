@@ -1,9 +1,7 @@
 ---
 title: "Dijital Pazarlama ve E-Ticaret"
 description: "Dijital Pazarlama ve E-Ticaret alanında bilgi sahibi olmak, çevrimiçi pazarlama stratejilerini ve dijital satış süreçlerini anlamak için önemli bir adımdır. Bu eğitim içerikleri sayesinde, dijital pazarlama araçları, SEO, sosyal medya yönetimi ve e-ticaret platformlarının işleyişi konularında temel ve uygulamalı bilgi edinebilirsin."
-pubDate: 2024-01-01
 image: "/blog/post-03-cover.png"
-author: "youMIS"
 ---
 
 ## 🎯 Eğitim İçerikleri

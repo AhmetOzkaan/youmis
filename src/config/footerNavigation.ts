@@ -35,13 +35,13 @@ export interface FooterData {
 
 export const footerNavigationData: FooterData = {
 	footerAbout: {
-		title: 'youMIS',
+		title: 'youMIS?',
 		aboutText:
 				'Your AI-powered guide for navigating Management Information Systems education and career paths.',
 		logo: {
 			src: '/logo.jpeg',
 			alt: 'logo',
-			text: 'youMIS'
+			text: 'youMIS?'
 		}
 	},
 	footerColumns: [
@@ -90,6 +90,6 @@ export const footerNavigationData: FooterData = {
 		}
 	],
 	subFooter: {
-		copywriteText: `© youMIS ${new Date().getFullYear()}.`
+		copywriteText: `© youMIS? ${new Date().getFullYear()}.`
 	}
 }

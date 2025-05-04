@@ -1,9 +1,7 @@
 ---
 title: "İş Analizi"
 description: "İş analizi alanında kendini geliştirmek isteyenler için temel yaklaşımlardan uygulamalı tekniklere kadar çeşitli eğitim içerikleri. Bu kaynaklar, iş ihtiyaçlarını analiz etme, süreçleri modelleme ve projelere stratejik katkı sağlama becerilerini destekler."
-pubDate: 2024-01-01
 image: "/blog/post-01-cover.png"
-author: "youMIS"
 ---
 
 ## 🎯 Eğitim İçerikleri

@@ -1,9 +1,7 @@
 ---
 title: "Organizasyonel Davranış ve Kurumsal İletişim"
 description: "Organizasyonel Davranış ve Kurumsal İletişim alanında bilgi sahibi olmak, organizasyonel yapıların ve iç iletişim süreçlerinin etkin yönetilmesi için önemli bir adımdır. Bu eğitim içerikleri sayesinde, organizasyonel davranışın temellerini, iletişim stratejilerini ve bu süreçlerin işleyişini öğrenebilirsin."
-pubDate: 2024-01-01
 image: "/blog/post-05-cover.png"
-author: "youMIS"
 ---
 
 ## 🎯 Eğitim İçerikleri

@@ -13,10 +13,11 @@ import Col from '../../ui/Col.astro'
 type Props = {
 	id?: string
 	title?: string
+	subtitle?: string
 	text?: string
 	classes?: string
 }
-const { id = 'intro', title, text, classes } = Astro.props
+const { id = 'intro', title, subtitle, text, classes } = Astro.props
 ---
 
 <Section id={id} classes=`bg-neutral-50 dark:bg-neutral-900 ${classes}`>
@@ -24,6 +25,7 @@ const { id = 'intro', title, text, classes } = Astro.props
 		<Col span="12" align="center">
 			<header class="page-header">
 				<h1 class="page-header__title" set:html={title} />
+				{subtitle && <h2 class="page-header__subtitle">{subtitle}</h2>}
 				<p class="page-header__text" set:html={text} />
 			</header>
 		</Col>

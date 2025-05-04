@@ -1,9 +1,7 @@
 ---
 title: "ERP ve İş Süreçleri"
 description: "ERP sistemleri ve iş süreçleri yönetimi alanında bilgi sahibi olmak, kurumsal yapıları ve dijital sistemleri anlamak için önemli bir adımdır. Bu eğitim içerikleri sayesinde süreç modelleme, ERP mantığı ve sistemlerin işleyişi konularında temel ve uygulamalı bilgi edinebilirsin."
-pubDate: 2024-01-01
 image: "/blog/post-04-cover.png"
-author: "youMIS"
 ---
 
 ## 🎯 Eğitim İçerikleri

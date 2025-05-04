@@ -11,12 +11,12 @@ export interface SocialLink {
 export const socialLinks: SocialLink[] = [
 	{
 		name: 'instagram',
-		link: 'https://instagram.com/youmis',
+		link: 'https://instagram.com/youmisofficial ',
 		icon: 'instagram-icon'
 	},
 	{
 		name: 'twitter',
-		link: 'https://twitter.com/youmis',
-		icon: 'twitter-icon'
+		link: 'https://x.com/youmisofficial ',
+		icon: 'x-icon'
 	}
 ]

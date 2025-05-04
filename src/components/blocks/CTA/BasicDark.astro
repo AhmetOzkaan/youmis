@@ -19,7 +19,6 @@ import Highlight from '../../ui/Highlight.astro'
 import ctaImage from '../../../assets/cta-dark-bg.webp'
 import badge from '../../../assets/badge.svg'
 ---
-
 <Section>
 	<Row>
 		<Col span="1" />
@@ -32,10 +31,9 @@ import badge from '../../../assets/badge.svg'
 			>
 				<ChipNotification radius="rounded-full" classes="mb-6 box">
 					<Image src={badge} alt="Quick Assessment" class="h-12 w-12" slot="button" />
-					<span class="hidden md:block">Only takes 5 minutes,</span>
-					<Highlight classes="md:ml-2"> 95% accuracy </Highlight>
+					<span class="hidden md:block">Only takes 5 minutes.</span>
 				</ChipNotification>
-				<Button size="lg" style="primary"> Take the Career Test </Button>
+				<Button size="2xl" style="primary"> Take the Career Test </Button>
 			</CTA>
 		</Col>
 		<Col span="1" />

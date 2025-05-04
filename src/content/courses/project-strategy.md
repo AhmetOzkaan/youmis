@@ -1,9 +1,7 @@
 ---
 title: "Proje ve Strateji Yönetimi"
 description: "Proje ve strateji yönetimi alanında kendini geliştirmek, iş dünyasında planlama, uygulama ve karar alma süreçlerinde etkin rol almak için oldukça değerlidir. Bu eğitim içerikleriyle projeleri yönetme ve hedef odaklı ilerleme becerilerini geliştirebilirsin."
-pubDate: 2024-01-01
 image: "/blog/post-06-cover.png"
-author: "youMIS"
 ---
 
 ## 🎯 Eğitim İçerikleri

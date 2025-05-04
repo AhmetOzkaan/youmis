@@ -17,29 +17,19 @@ const SEO = {
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
-    <div class="bg-gradient-to-b from-primary-50 to-white dark:from-gray-900 dark:to-gray-800">
+    <div class="bg-gradient-to-b from-neutral-50 to-white dark:from-neutral-900 dark:to-neutral-800">
         <div class="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
             <div class="max-w-4xl mx-auto">
                 <div class="mb-8">
                     <Breadcrumbs classes="mb-4" />
                     <div class="space-y-6">
                         <div class="flex flex-col gap-2">
-                            <p class="text-primary-600 dark:text-primary-400 text-sm font-medium">
-                                {new Date(frontmatter.pubDate).toLocaleDateString('en-US', {
-                                    year: 'numeric',
-                                    month: 'long',
-                                    day: 'numeric'
-                                })}
-                            </p>
-                            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-gray-900 dark:text-white">
+                            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-neutral-900 dark:text-white">
                                 {frontmatter.title}
                             </h1>
                         </div>
-                        <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
+                        <p class="text-lg sm:text-xl text-neutral-600 dark:text-neutral-300 leading-relaxed">
                             {frontmatter.description}
-                        </p>
-                        <p class="text-sm text-gray-500 dark:text-gray-400 font-medium">
-                            by {frontmatter.author}
                         </p>
                     </div>
                 </div>

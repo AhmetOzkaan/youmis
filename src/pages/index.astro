@@ -11,12 +11,12 @@ import CTA from '../components/blocks/CTA/BasicDark.astro'
 
 // Content
 // - Testimonial background
-import testimonialBackground from '../assets/testimonial-bg-01.webp'
+import testimonialBackground from '../assets/testimonial-bg.png'
 // - SEO
 const SEO = {
-	title: 'youMIS | Don`t MISs Your Future!',
+	title: "youMIS? | Don't MISs Your Future!",
 	description:
-		'youMIS' //will be updated
+		'youMIS?' //will be updated
 }
 
 // Custom testimonials (if you want to override defaults)
@@ -48,6 +48,5 @@ const testimonials = [
 	<Hero />
 	<Features />
 	<Testimonial testimonials={testimonials} bg={testimonialBackground} bgPosition="right" />
-	<HighlightBlocks />
 	<CTA />
 </Layout>

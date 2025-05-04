@@ -1,9 +1,7 @@
 ---
 title: "Veri Analitiği"
 description: "Veri analitiği alanında temel kavramlardan ileri analiz tekniklerine kadar kendini geliştirebileceğin eğitim içerikleri. Bu kaynaklar sayesinde veriye dayalı düşünme becerilerini güçlendirebilir ve analitik dünyaya sağlam bir adım atabilirsin."
-pubDate: 2024-01-01
 image: "/blog/post-02-cover.png"
-author: "youMIS"
 ---
 
 ## 🎯 Eğitim İçerikleri

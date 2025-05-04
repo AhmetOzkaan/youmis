@@ -20,9 +20,7 @@ const courses = defineCollection({
 		z.object({
 			title: z.string(),
 			description: z.string(),
-			pubDate: z.date(),
 			image: z.string(),
-			author: z.string(),
 			videoUrl: z.string().optional()
 		})
 })
