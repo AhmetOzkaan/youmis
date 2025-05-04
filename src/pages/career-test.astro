@@ -162,7 +162,6 @@ function initializeQuiz() {
     
     document.getElementById('nextBtn')?.addEventListener('click', () => {
         const currentInput = document.querySelector(`input[name="q${currentQuestion + 1}"]:checked`);
-        console.log(currentInput)
         if (!currentInput) {
             showNotification('Please select an answer before proceeding.');
             return;
@@ -188,6 +187,7 @@ function initializeQuiz() {
         }
         
         try {
+            console.log(JSON.stringify({ answers }));
             const response = await fetch('/api/career-test', {
                 method: 'POST',
                 headers: {
