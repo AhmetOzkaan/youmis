@@ -19,23 +19,18 @@ import Highlight from '../../ui/Highlight.astro'
 import ctaImage from '../../../assets/cta-dark-bg.webp'
 import badge from '../../../assets/badge.svg'
 ---
-<Section>
-	<Row>
-		<Col span="1" />
-		<Col span="10">
-			<CTA
-				title="Discover Your Ideal MIS Career Path!"
-				text="Take our comprehensive assessment to identify which MIS specialization aligns with your skills and interests. Complete the test in just a few minutes and get personalized career recommendations tailored just for you."
-				mode="dark"
-				bg={ctaImage}
-			>
-				<ChipNotification radius="rounded-full" classes="mb-6 box">
-					<Image src={badge} alt="Quick Assessment" class="h-12 w-12" slot="button" />
-					<span class="hidden md:block">Only takes 5 minutes.</span>
-				</ChipNotification>
-				<Button size="2xl" style="primary" link='/career-test'> Take the Career Test </Button>
-			</CTA>
-		</Col>
-		<Col span="1" />
-	</Row>
+<Section classes="min-h-screen" fullWidth>
+	<CTA
+		title="Discover Your Ideal MIS Career Path!"
+		text="Take our comprehensive assessment to identify which MIS specialization aligns with your skills and interests. Complete the test in just a few minutes and get personalized career recommendations tailored just for you."
+		mode="dark"
+		bg={ctaImage}
+		classes="min-h-screen flex flex-col items-center justify-center w-full"
+	>
+		<ChipNotification radius="rounded-full" classes="mb-6 box">
+			<Image src={badge} alt="Quick Assessment" class="h-12 w-12" slot="button" />
+			<span class="hidden md:block">Only takes 5 minutes.</span>
+		</ChipNotification>
+		<Button size="2xl" style="primary" link='/career-test'> Take the Career Test </Button>
+	</CTA>
 </Section>
