@@ -6,6 +6,8 @@ import Layout from '../layouts/Layout.astro'
 import SidebarContent from '../components/blocks/basic/StickySidebar.astro'
 import Hero from '../components/blocks/hero/PageHeader.astro'
 import chartImage from '../assets/chart_en.png'
+import misImage1 from '../assets/mis-1.png'
+import misImage2 from '../assets/mis-2.png'
 import { Image } from 'astro:assets'
 
 
@@ -51,26 +53,33 @@ const header = {
 			</p>
 		</div>
 		<div class="basic-text">
-			<h4>Program Structure</h4>
-			<p>
-				The Management Information Systems department in Turkey admits students based on the EA (Equal Weight) score type from the YKS (Higher Education Institutions Examination). The MIS undergraduate program consists of a 4-year educational period, which may extend to 5 years with a preparatory class at some universities.
-			</p>
+			<div class="grid grid-cols-1 md:grid-cols-[1fr,auto] gap-8 items-center">
+				<div>
+					<h4>Program Structure</h4>
+					<p>
+						The Management Information Systems department in Turkey admits students based on the EA (Equal Weight) score type from the YKS (Higher Education Institutions Examination). The MIS undergraduate program consists of a 4-year educational period, which may extend to 5 years with a preparatory class at some universities.
+					</p>
 
-			<h4>Course Content</h4>
-			<h5>Management Field:</h5>
-			<ul>
-				<li>Business Administration, Accounting, Economics, Statistics</li>
-				<li>Project Management, Strategic Planning, Entrepreneurship, Leadership</li>
-			</ul>
+					<h4>Course Content</h4>
+					<h5>Management Field:</h5>
+					<ul>
+						<li>Business Administration, Accounting, Economics, Statistics</li>
+						<li>Project Management, Strategic Planning, Entrepreneurship, Leadership</li>
+					</ul>
 
-			<h5>Information Technology Field:</h5>
-			<ul>
-				<li>Programming, Coding</li>
-				<li>Database Management</li>
-				<li>Web Development, Mobile Application Development</li>
-				<li>ERP Systems, Decision Support Systems</li>
-				<li>Computer Networks, Operating Systems, and Security</li>
-			</ul>
+					<h5>Information Technology Field:</h5>
+					<ul>
+						<li>Programming, Coding</li>
+						<li>Database Management</li>
+						<li>Web Development, Mobile Application Development</li>
+						<li>ERP Systems, Decision Support Systems</li>
+						<li>Computer Networks, Operating Systems, and Security</li>
+					</ul>
+				</div>
+				<div class="flex items-center justify-center">
+					<Image src={misImage1} alt={"info"} width={500} />
+				</div>
+			</div>
 		</div>
 	</SidebarContent>
 
@@ -133,7 +142,9 @@ const header = {
 			</p>
 		</div>
 		<div class="basic-text">
-			<h4>Key Benefits</h4>
+			<div class="grid grid-cols-1 md:grid-cols-[1fr,auto] gap-8 items-center">
+				<div>
+					<h4>Key Benefits</h4>
 			<ul>
 				<li>Dual competence in technology and business</li>
 				<li>Diverse job opportunities across sectors</li>
@@ -156,6 +167,11 @@ const header = {
 				<li>Are interested in digital transformation</li>
 				<li>Want to work in a dynamic, evolving field</li>
 			</ul>
+				</div>
+				<div class="flex items-center justify-center">
+					<Image src={misImage2} alt={"info"} width={500} />
+				</div>
+			</div>
 		</div>
 	</SidebarContent>
 </Layout>
