@@ -2,15 +2,115 @@
   "questions": [
     {
       "id": 1,
-      "question": "I enjoy solving complex problems by breaking them down into smaller parts"
+      "question": "Coding gives me great pleasure."
     },
     {
       "id": 2,
-      "question": "I prefer working with data and numbers over working with people"
+      "question": "Learning a new programming language constantly motivates me."
     },
     {
       "id": 3,
-      "question": "I am good at explaining technical concepts to non-technical people"
+      "question": "I prefer spending time on the debugging and testing phases of a software development project."
+    },
+    {
+      "id": 4,
+      "question": "I enjoy designing software based on user needs in software projects."
+    },
+    {
+      "id": 5,
+      "question": "Analyzing data and extracting meaningful results excites me."
+    },
+    {
+      "id": 6,
+      "question": "I enjoy using data visualization tools to make information more understandable."
+    },
+    {
+      "id": 7,
+      "question": "Analyzing data sets and making inferences about business processes from this data is important to me."
+    },
+    {
+      "id": 8,
+      "question": "I feel comfortable making data-driven decisions and presenting these decisions in report format."
+    },
+    {
+      "id": 9,
+      "question": "Analyzing a business process and developing solution proposals excites me."
+    },
+    {
+      "id": 10,
+      "question": "Accurately identifying user needs is a critical factor for project success."
+    },
+    {
+      "id": 11,
+      "question": "I am successful at modeling business processes in detail and making optimizations."
+    },
+    {
+      "id": 12,
+      "question": "Understanding data analysis and business processes enables me to develop the right business solutions."
+    },
+    {
+      "id": 13,
+      "question": "I enjoy using ERP systems to make company processes more efficient."
+    },
+    {
+      "id": 14,
+      "question": "I understand well the role of ERP software in optimizing business processes."
+    },
+    {
+      "id": 15,
+      "question": "I have experience in configuring ERP systems and adapting them to business processes."
+    },
+    {
+      "id": 16,
+      "question": "I have in-depth knowledge about Enterprise Resource Planning (ERP) and the integration of business processes."
+    },
+    {
+      "id": 17,
+      "question": "Managing a project process from start to finish, planning and organizing all steps is a suitable task for me."
+    },
+    {
+      "id": 18,
+      "question": "I enjoy managing the project budget and making strategic plans to achieve project goals."
+    },
+    {
+      "id": 19,
+      "question": "I am competent in organizing operational details related to the project, such as time management and resource allocation."
+    },
+    {
+      "id": 20,
+      "question": "Ensuring the successful completion of projects by working within a team is one of my strengths."
+    },
+    {
+      "id": 21,
+      "question": "I enjoy leading within a team and guiding group work."
+    },
+    {
+      "id": 22,
+      "question": "Managing corporate communication and establishing correct relationships with stakeholders is important."
+    },
+    {
+      "id": 23,
+      "question": "I can manage projects more effectively by communicating with various departments."
+    },
+    {
+      "id": 24,
+      "question": "By exhibiting crisis management and a solution-oriented approach, I can successfully resolve challenging situations."
+    },
+    {
+      "id": 25,
+      "question": "I am interested in developing digital marketing strategies and running social media campaigns."
+    },
+    {
+      "id": 26,
+      "question": "I have knowledge about sales and customer relationship management on e-commerce platforms."
+    },
+    {
+      "id": 27,
+      "question": "I can effectively use digital marketing techniques like SEO and SEM."
+    },
+    {
+      "id": 28,
+      "question": "I enjoy developing strategies to improve user experience in the e-commerce business model."
     }
   ]
 }
