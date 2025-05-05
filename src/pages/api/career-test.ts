@@ -1,5 +1,12 @@
 export const prerender = false;
+
 import type { APIRoute } from 'astro';
+import { GoogleGenerativeAI, SchemaType, type GenerationConfig } from '@google/generative-ai';
+import * as fs from 'fs';
+import {
+    GOOGLE_API_KEY,
+  } from 'astro:env/server'
+  
 
 interface Answer {
     question: number;
@@ -7,36 +14,96 @@ interface Answer {
 }
 
 interface CareerPath {
+    id: number;
     title: string;
-    description: string;
     courseLink: string;
-    minScore: number;
 }
+
+const genAI = new GoogleGenerativeAI(GOOGLE_API_KEY);
+const promptFile = await fs.promises.readFile('src/data/prompt.md', 'utf-8');
+const systemInstruction = promptFile;
+
+const generationConfig : GenerationConfig = {
+    temperature: 0.8,
+    topP: 0.95,
+    topK: 64,
+    maxOutputTokens: 65536,
+    responseMimeType: "application/json", 
+    responseSchema: {
+        type: SchemaType.OBJECT,
+        required: ["id", "description"],
+        properties: {
+            id: { type: SchemaType.NUMBER },
+            description: { type: SchemaType.STRING },
+        }
+    }
+ };
+
+
+const model = genAI.getGenerativeModel({
+    model: "gemini-2.5-pro-exp-03-25",
+    systemInstruction,
+    generationConfig
+  });
+
+async function getAPIResult(answers: Answer[]) {
+    try {
+      const result = await model.generateContent([
+        JSON.stringify(answers)
+      ]);
+      
+      const response = await result.response;
+      const text = response.text();
+      const json = JSON.parse(text);
+      
+      return {
+        success: true,
+        json
+      };
+    } catch (error) {
+      console.error('Error processing image:', error);
+      return {
+        success: false,
+        error
+};
+    }
+  }
 
 const careerPaths: CareerPath[] = [
     {
-        title: "Business Analyst",
-        description: "You show strong analytical and problem-solving skills. Business Analysis might be the perfect career path for you, where you'll bridge the gap between business needs and technology solutions.",
+        id: 1,
+        title: "Business Analysis",
         courseLink: "/courses/business-analysis",
-        minScore: 20
     },
     {
-        title: "Project Manager",
-        description: "Your responses indicate strong leadership and organizational abilities. Project Management could be your calling, where you'll guide teams and projects to successful completion.",
-        courseLink: "/courses/project-management",
-        minScore: 15
-    },
-    {
-        title: "Data Analyst",
-        description: "You demonstrate a strong affinity for working with data and finding insights. A career in Data Analytics could be perfect for you, where you'll turn data into actionable business insights.",
+        id: 2,
+        title: "Data Analytics",
         courseLink: "/courses/data-analytics",
-        minScore: 10
     },
     {
-        title: "IT Consultant",
-        description: "Your profile shows a good balance of technical and business skills. IT Consulting could be your path, where you'll help organizations optimize their technology use.",
-        courseLink: "/courses/it-consulting",
-        minScore: 0
+        id: 3,
+        title: "Digital Marketing and E-Commerce",
+        courseLink: "/courses/digital-marketing",
+    },
+    {
+        id: 4,
+        title: "ERP and Business Processes",
+        courseLink: "/courses/erp-and-processes",
+    },
+    {
+        id: 5,
+        title: "Organizational Behavior and Corporate Communication",
+        courseLink: "/courses/organizational-behavior",
+    },
+    {
+        id: 6,
+        title: "Project and Strategy Management",
+        courseLink: "/courses/project-strategy",
+    },
+    {
+        id: 7,
+        title: "Software Development",
+        courseLink: "/courses/software-development",
     }
 ];
 
@@ -45,13 +112,27 @@ export const POST: APIRoute = async ({ request }) => {
         const body = await request.json();
         const answers: Answer[] = body.answers;
 
-        // Calculate total score
-        const totalScore = answers.reduce((sum, answer) => sum + answer.answer, 0);
+        const apiResponse = await getAPIResult(answers);
+        
+        if (!apiResponse.success) {
+            return new Response(JSON.stringify({ error: 'Error processing request' }), {
+                status: 500,
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+        }
 
-        // Find appropriate career path based on score
-        const recommendedPath = careerPaths.find(path => totalScore >= path.minScore) || careerPaths[careerPaths.length - 1];
+        const bestCareerPath = careerPaths.find((path) => path.id === apiResponse.json.id);
 
-        return new Response(JSON.stringify(recommendedPath), {
+        const result = {
+            title: bestCareerPath?.title,
+            description: apiResponse.json.description,
+            courseLink: bestCareerPath?.courseLink,
+        };
+
+
+        return new Response(JSON.stringify(result), {
             status: 200,
             headers: {
                 'Content-Type': 'application/json'
