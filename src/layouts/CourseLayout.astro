@@ -31,6 +31,15 @@ const SEO = {
                         <p class="text-lg sm:text-xl text-neutral-600 dark:text-neutral-300 leading-relaxed">
                             {frontmatter.description}
                         </p>
+                        {frontmatter.image && (
+                            <div class="mt-8 flex justify-center">
+                                <img
+                                    src={frontmatter.image}
+                                    alt={frontmatter.title}
+                                    class="rounded-lg shadow-lg max-h-[600px] min-w-[600px] object-cover"
+                                />
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>

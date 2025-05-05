@@ -22,9 +22,10 @@ type Props = {
 	tags?: any
 	title: string
 	author?: string
-	publishDate?: string
+	publishDate?: string,
+	image?: string
 }
-const { tags, title, author, publishDate } = Astro.props
+const { tags, title, author, publishDate, image} = Astro.props
 ---
 
 <Section id="post-intro" classes="bg-neutral-50 dark:bg-neutral-900">
@@ -54,6 +55,15 @@ const { tags, title, author, publishDate } = Astro.props
 					</div>
 				)
 			}
+			{image && (
+				<div class="mt-8 flex justify-center">
+					<img
+						src={image}
+						alt={title}
+						class="rounded-lg shadow-lg max-h-[600px] object-cover"
+					/>
+				</div>
+			)}
 		</Col>
 	</Row>
 </Section>

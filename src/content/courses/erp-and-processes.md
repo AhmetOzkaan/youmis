@@ -1,7 +1,7 @@
 ---
 title: "ERP and Business Processes"
 description: "Having knowledge in ERP systems and business process management is an important step to understand corporate structures and digital systems. Thanks to these training contents, you can gain basic and applied knowledge on process modeling, ERP logic and system operation."
-image: "/courses/erp-processes.png"
+image: "/courses/erp-and-processes.png"
 ---
 ## 🎯 Educational Content
 
