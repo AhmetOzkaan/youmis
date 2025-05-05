@@ -1,8 +1,8 @@
 ---
 title: 'Forensics Tool ‘Reanimates’ the ‘Brains’ of AIs That Fail to Understand What Went Wrong'
-pubDate: 2025-04-30T11:00:00Z
+pubDate: 2025-05-03T11:00:00Z
 description: 'Explore AI Psychiatry, a novel forensics tool developed at Georgia Tech that recreates failed AI models from memory dumps to diagnose errors and vulnerabilities.'
-author: 'Mehmet Ali Öztürk, Ayşe Yılmaz'
+author: 'Alex Heath'
 image: '/blog/ai.jpg'
 tags: ['AI', 'forensics']
 ---

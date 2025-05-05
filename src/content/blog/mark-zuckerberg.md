@@ -1,8 +1,8 @@
 ---
 title: 'Mark Zuckerberg just declared war on the entire advertising industry'
-pubDate: 2025-04-15T09:00:00Z
+pubDate: 2025-05-02T09:00:00Z
 description: 'Meta CEO Mark Zuckerberg outlines a future where AI handles all aspects of advertising, from creative generation to targeting and measurement, potentially eliminating the traditional ad ecosystem.'
-author: 'Kaan Demir'
+author: 'Igor Bonifacic'
 image: '/blog/mark-zuckerberg.jpg'
 tags: ['AI', 'competition', 'Meta']
 ---

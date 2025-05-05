@@ -1,8 +1,8 @@
 ---
 title: 'Google I/O 2025: What to expect from Android 16, Android XR and Gemini'
-pubDate: 2025-04-10T10:00:00Z
+pubDate: 2025-04-29T10:00:00Z
 description: 'Predictions for Google I/O 2025, covering potential announcements for Android 16, the Android XR platform, Gemini AI updates, Project Astra, Wear OS, and more.'
-author: 'Emir Kaya'
+author: 'David Oygenblik, Brendan Saltaformaggio'
 image: '/blog/google-io.jpg'
 tags: ['Google', 'Android', 'AI']
 ---

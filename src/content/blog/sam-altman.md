@@ -1,8 +1,8 @@
 ---
 title: 'Sam Altman and Elon Musk are racing to build an ‘everything app’'
-pubDate: 2025-04-18T10:00:00Z
+pubDate: 2025-05-01T10:00:00Z
 description: 'An exploration of the emerging competition between Sam Altman (via Worldcoin/Tools for Humanity) and Elon Musk (via X) to create an "everything app," alongside insights into Meta''s own AI app strategy.'
-author: 'Canan Yılmaz'
+author: 'Nilay Patel'
 image: '/blog/sam-altman.jpg'
 tags: ['AI', 'competition']
 ---

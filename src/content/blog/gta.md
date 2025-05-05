@@ -1,8 +1,8 @@
 ---
 title: 'Grand Theft Auto 6 delayed until May 2026'
-pubDate: 2025-04-05T12:00:00Z
+pubDate: 2025-05-03T12:00:00Z
 description: 'Rockstar Games announces a delay for the highly anticipated Grand Theft Auto 6, pushing the release to May 2026, citing quality standards and sparking fan reactions.'
-author: 'Can Aydın, Elif Şahin'
+author: 'Peter Gillibrand, Tom Richardson'
 image: '/blog/gta.png'
 tags: ['gaming']
 ---
