@@ -58,7 +58,6 @@ const answers = [
                                                 value={answer.value}
                                                 class="w-4 h-4 text-primary-600 border-neutral-300 focus:ring-primary-500"
                                                 required
-                                                checked
                                             />
                                             <span class="ml-3 text-neutral-700 dark:text-neutral-300 group-hover:text-neutral-900 dark:group-hover:text-white">
                                                 {answer.text}
@@ -96,7 +95,7 @@ const answers = [
 
                     <div id="results" class="hidden space-y-6">
                         <h3 class="text-2xl font-bold text-neutral-900 dark:text-white">Your Results</h3>
-                        <div id="resultContent" class="prose dark:prose-invert"></div>
+                        <div id="resultContent" class="prose max-w-full dark:prose-invert"></div>
                     </div>
                     
                     <!-- Loading screen -->
@@ -113,6 +112,7 @@ const answers = [
 <script define:vars={{ questions }}>
 let currentQuestion = 0;
 const totalQuestions = questions.questions.length;
+let savedResult = null;
 
 function showQuestion(index) {
     document.querySelectorAll('.question-container').forEach(q => q.classList.add('hidden'));
@@ -144,8 +144,79 @@ function showNotification(message, type = 'error') {
     }
     
     notificationText.textContent = message;
-    
+}
 
+// Save user state to localStorage
+function saveState(answers, currentQuestionIndex) {
+    const state = {
+        answers: answers,
+        currentQuestion: currentQuestionIndex,
+        timestamp: new Date().getTime()
+    };
+    localStorage.setItem('careerTestState', JSON.stringify(state));
+}
+
+// Save result to localStorage
+function saveResult(result) {
+    localStorage.setItem('careerTestResult', JSON.stringify({
+        result: result,
+        timestamp: new Date().getTime()
+    }));
+}
+
+// Load user state from localStorage
+function loadState() {
+    const stateJson = localStorage.getItem('careerTestState');
+    const resultJson = localStorage.getItem('careerTestResult');
+    
+    if (resultJson) {
+        try {
+            return { result: JSON.parse(resultJson).result };
+        } catch (e) {
+            console.error('Error parsing saved result', e);
+        }
+    }
+    
+    if (stateJson) {
+        try {
+            return { state: JSON.parse(stateJson) };
+        } catch (e) {
+            console.error('Error parsing saved state', e);
+        }
+    }
+    
+    return null;
+}
+
+// Restore answers from saved state
+function restoreAnswers(savedAnswers) {
+    if (!savedAnswers || !Array.isArray(savedAnswers)) return;
+    
+    savedAnswers.forEach(answer => {
+        const input = document.querySelector(`input[name="q${answer.question}"][value="${answer.answer}"]`);
+        if (input) {
+            input.checked = true;
+        }
+    });
+}
+
+// Helper function to generate result HTML
+function generateResultHTML(result) {
+    return `
+        <h4 class="text-xl font-semibold mb-4">${result.title}</h4>
+        <div class="flex flex-col gap-4">
+            <p class="mb-6">${result.description}</p>
+            <img src="${result.courseLink + '.png'}" alt="Course Preview" class="rounded-lg shadow-lg w-full max-w-lg mx-auto" />
+            <div class="flex items-center justify-between">
+                <a href="${result.courseLink}" class="inline-block px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors">
+                    View Recommended Course
+                </a>
+                <button id="retakeBtn" class="px-6 py-2 text-sm font-medium text-primary-600 border border-primary-600 rounded-lg hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-colors">
+                    Retake Test
+                </button>
+            </div>
+        </div>
+    `;
 }
 
 function initializeQuiz() {
@@ -156,8 +227,32 @@ function initializeQuiz() {
     document.getElementById('results')?.classList.add('hidden');
     document.getElementById('notification')?.classList.add('hidden');
     
-    currentQuestion = 0;
-    showQuestion(0);
+    // Check for saved state or result
+    const savedData = loadState();
+    
+    if (savedData?.result) {
+        // Show previous result
+        document.getElementById('quizForm').classList.add('hidden');
+        document.getElementById('results').classList.remove('hidden');
+        document.getElementById('resultContent').innerHTML = generateResultHTML(savedData.result);
+        
+        document.getElementById('retakeBtn')?.addEventListener('click', () => {
+            localStorage.removeItem('careerTestState');
+            localStorage.removeItem('careerTestResult');
+            initializeQuiz();
+        });
+        
+        return;
+    }
+    
+    currentQuestion = savedData?.state?.currentQuestion || 0;
+
+    showQuestion(currentQuestion);
+    
+    // Restore previous answers if available
+    if (savedData?.state?.answers) {
+        restoreAnswers(savedData.state.answers);
+    }
     
     document.getElementById('prevBtn')?.addEventListener('click', () => {
         if (currentQuestion > 0) {
@@ -173,6 +268,17 @@ function initializeQuiz() {
             showNotification('Please select an answer before proceeding.');
             return;
         }
+        
+        // Save current state
+        const answers = [];
+        for (let i = 1; i <= totalQuestions; i++) {
+            const answer = document.querySelector(`input[name="q${i}"]:checked`);
+            if (answer) {
+                answers.push({"question": i, "answer": Number(answer.value)});
+            }
+        }
+        saveState(answers, currentQuestion + 1);
+        
         document.getElementById('notification')?.classList.add('hidden');
         if (currentQuestion < totalQuestions - 1) {
             currentQuestion++;
@@ -192,6 +298,7 @@ function initializeQuiz() {
             }
             answers.push({"question": i, "answer": Number(answer.value)});
         }
+        document.getElementById('submitBtn').disabled = true;
         
         try {
             // Show loading screen
@@ -199,7 +306,6 @@ function initializeQuiz() {
             document.getElementById('loadingScreen').classList.remove('hidden');
             document.getElementById('loadingScreen').classList.add('flex');
             
-            console.log(JSON.stringify({ answers }));
             const response = await fetch('/api/career-test', {
                 method: 'POST',
                 headers: {
@@ -209,19 +315,32 @@ function initializeQuiz() {
             });
             
             const result = await response.json();
+
+            // Convert markdown result description to HTML
+            result.description = result.description.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                                                .replace(/\*(.*?)\*/g, '<em>$1</em>')
+                                                .replace(/\n/g, '<br>');
+
+            
+            // Save result to localStorage
+            saveResult(result);
             
             // Hide loading screen and show results
             document.getElementById('loadingScreen').classList.add('hidden');
             document.getElementById('loadingScreen').classList.remove('flex');
             document.getElementById('results').classList.remove('hidden');
-            document.getElementById('resultContent').innerHTML = `
-                <h4 class="text-xl font-semibold mb-4">${result.title}</h4>
-                <p class="mb-6">${result.description}</p>
-                <a href="${result.courseLink}" class="inline-block px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors">
-                    View Recommended Course
-                </a>
-            `;
+            document.getElementById('resultContent').innerHTML = generateResultHTML(result);
+            document.getElementById('submitBtn').disabled = false;
+
+            
+            document.getElementById('retakeBtn')?.addEventListener('click', () => {
+                localStorage.removeItem('careerTestState');
+                localStorage.removeItem('careerTestResult');
+                initializeQuiz();
+            });
         } catch (error) {
+            document.getElementById('submitBtn').disabled = false;
+
             // Hide loading screen and show error notification
             document.getElementById('loadingScreen').classList.add('hidden');
             document.getElementById('loadingScreen').classList.remove('flex');
