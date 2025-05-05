@@ -52,7 +52,7 @@ async function getAPIResult(answers: Answer[]) {
         JSON.stringify(answers)
       ]);
       
-      const response = await result.response;
+      const response = result.response;
       const text = response.text();
       const json = JSON.parse(text);
       

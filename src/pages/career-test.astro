@@ -50,7 +50,7 @@ const answers = [
                                     {q.question}
                                 </h3>
                                 <div class="space-y-3">
-                                    {answers.map((answer, i) => (
+                                    {answers.map((answer) => (
                                         <label class="flex items-center p-4 border rounded-lg cursor-pointer transition-colors hover:bg-neutral-50 dark:hover:bg-neutral-800 group">
                                             <input 
                                                 type="radio" 
@@ -109,10 +109,10 @@ const answers = [
     </div>
 </Layout>
 
-<script define:vars={{ questions }}>
+<script is:inline define:vars={{ questions }}>
 let currentQuestion = 0;
 const totalQuestions = questions.questions.length;
-let savedResult = null;
+//let savedResult = null;
 
 function showQuestion(index) {
     document.querySelectorAll('.question-container').forEach(q => q.classList.add('hidden'));

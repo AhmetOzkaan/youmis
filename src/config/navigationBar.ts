@@ -2,15 +2,6 @@
 // ------------
 // Description: The navigation bar data for the website.
 
-import { z, getCollection } from 'astro:content'
-
-// Get course names for navigation
-const courses = await getCollection('courses')
-const courseSubmenu = courses.map(course => ({
-	name: course.data.title,
-	link: `/courses/${course.id}`
-}))
-
 export interface Logo {
 	src: string
 	alt: string
