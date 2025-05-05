@@ -2,7 +2,7 @@ export const prerender = false;
 
 import type { APIRoute } from 'astro';
 import { GoogleGenerativeAI, SchemaType, type GenerationConfig } from '@google/generative-ai';
-import * as fs from 'fs';
+import * as promptFile from '../../data/prompt.md';
 import {
     GOOGLE_API_KEY,
   } from 'astro:env/server'
@@ -20,8 +20,7 @@ interface CareerPath {
 }
 
 const genAI = new GoogleGenerativeAI(GOOGLE_API_KEY);
-const promptFile = await fs.promises.readFile('src/data/prompt.md', 'utf-8');
-const systemInstruction = promptFile;
+const systemInstruction = promptFile.rawContent();
 
 const generationConfig : GenerationConfig = {
     temperature: 0.8,
