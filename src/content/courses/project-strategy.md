@@ -1,7 +1,7 @@
 ---
 title: "Project and Strategy Management"
 description: "Improving yourself in the field of project and strategy management is very valuable for taking an active role in planning, implementation and decision-making processes in the business world. With these training contents, you can develop your project management and goal-oriented progress skills."
-image: "/courses/project-management.png"
+image: "/courses/project-strategy.png"
 ---
 ## 🎯 Educational Content
 
