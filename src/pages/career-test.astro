@@ -98,6 +98,12 @@ const answers = [
                         <h3 class="text-2xl font-bold text-neutral-900 dark:text-white">Your Results</h3>
                         <div id="resultContent" class="prose dark:prose-invert"></div>
                     </div>
+                    
+                    <!-- Loading screen -->
+                    <div id="loadingScreen" class="hidden flex-col items-center justify-center space-y-4 py-12">
+                        <div class="w-12 h-12 border-4 border-primary-600 border-t-transparent rounded-full animate-spin"></div>
+                        <p class="text-lg font-medium text-neutral-700 dark:text-neutral-300">Analyzing your answers...</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -188,6 +194,11 @@ function initializeQuiz() {
         }
         
         try {
+            // Show loading screen
+            document.getElementById('quizForm').classList.add('hidden');
+            document.getElementById('loadingScreen').classList.remove('hidden');
+            document.getElementById('loadingScreen').classList.add('flex');
+            
             console.log(JSON.stringify({ answers }));
             const response = await fetch('/api/career-test', {
                 method: 'POST',
@@ -199,7 +210,9 @@ function initializeQuiz() {
             
             const result = await response.json();
             
-            document.getElementById('quizForm').classList.add('hidden');
+            // Hide loading screen and show results
+            document.getElementById('loadingScreen').classList.add('hidden');
+            document.getElementById('loadingScreen').classList.remove('flex');
             document.getElementById('results').classList.remove('hidden');
             document.getElementById('resultContent').innerHTML = `
                 <h4 class="text-xl font-semibold mb-4">${result.title}</h4>
@@ -209,6 +222,10 @@ function initializeQuiz() {
                 </a>
             `;
         } catch (error) {
+            // Hide loading screen and show error notification
+            document.getElementById('loadingScreen').classList.add('hidden');
+            document.getElementById('loadingScreen').classList.remove('flex');
+            document.getElementById('quizForm').classList.remove('hidden');
             showNotification('An error occurred. Please try again.');
         }
     });
