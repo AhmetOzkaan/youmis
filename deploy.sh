@@ -6,7 +6,7 @@ set -e
 # --- Configuration ---
 REMOTE_USER="youmis"                     # Sunucuya SSH ile bağlandığınız kullanıcı adı (örn: root, ubuntu, deployer)
 REMOTE_HOST="212.68.34.126"        # Sunucunuzun IP adresi veya alan adı
-REMOTE_PROJECT_PATH="~/deployment" # Sunucudaki projenizin KÖK DİZİNİ (dist klasörünün İÇERİĞİNİN kopyalanacağı yer)
+REMOTE_PROJECT_PATH="~/deployment-tr" # Sunucudaki projenizin KÖK DİZİNİ (dist klasörünün İÇERİĞİNİN kopyalanacağı yer)
 LOCAL_DIST_PATH="./dist"                 # Yerel makinenizdeki build çıktısı klasörü (genellikle './dist')
 NODE_PROCESS_NAME_OR_ID="youmis" # PM2 kullanıyorsanız uygulamanızın adı veya ID'si, Systemd kullanıyorsanız servis adı (.service uzantısız)
 # --- End Configuration ---
