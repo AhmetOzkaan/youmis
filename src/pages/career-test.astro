@@ -7,23 +7,23 @@ import questions from '../data/career-test-questions.json'
 // Content
 // - SEO
 const SEO = {
-    title: 'youMIS? | Career Test',
-    description: 'Take our career test to discover which MIS career path suits you best.'
+    title: 'youMIS? | Kariyer Testi',
+    description: 'Hangi YBS kariyer yolunun size en uygun olduğunu keşfetmek için kariyer testimizi çözün.'
 }
 
 // - Page Header
 const header = {
-    title: 'Discover Your <strong>MIS Career Path</strong>',
-    text: 'Answer these questions to help us understand your interests and suggest the best career path for you.'
+    title: '<strong>YBS Kariyer Yolunuzu</strong> Keşfedin',
+    text: 'İlgi alanlarınızı anlamamıza ve sizin için en iyi kariyer yolunu önermemize yardımcı olmak için bu soruları yanıtlayın.'
 }
 
 // Answer options
 const answers = [
-    { text: "Strongly Agree", value: 5 },
-    { text: "Agree", value: 4 },
-    { text: "Neutral", value: 3 },
-    { text: "Disagree", value: 2 },
-    { text: "Strongly Disagree", value: 1 }
+    { text: "Kesinlikle Katılıyorum", value: 5 },
+    { text: "Katılıyorum", value: 4 },
+    { text: "Kararsızım", value: 3 },
+    { text: "Katılmıyorum", value: 2 },
+    { text: "Kesinlikle Katılmıyorum", value: 1 }
 ]
 ---
 
@@ -74,34 +74,34 @@ const answers = [
                                 id="prevBtn"
                                 class="hidden px-6 py-2 text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white mr-auto"
                             >
-                                Previous
+                                Önceki
                             </button>
                             <button 
                                 type="button" 
                                 id="nextBtn"
                                 class="ml-auto px-6 py-2 text-sm font-medium text-white bg-primary-600 rounded-lg hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
                             >
-                                Next
+                                Sonraki
                             </button>
                             <button 
                                 type="submit" 
                                 id="submitBtn"
                                 class="hidden ml-auto px-6 py-2 text-sm font-medium text-white bg-primary-600 rounded-lg hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
                             >
-                                Get Results
+                                Sonuçları Gör
                             </button>
                         </div>
                     </form>
 
                     <div id="results" class="hidden space-y-6">
-                        <h3 class="text-2xl font-bold text-neutral-900 dark:text-white">Your Results</h3>
+                        <h3 class="text-2xl font-bold text-neutral-900 dark:text-white">Sonuçlarınız</h3>
                         <div id="resultContent" class="prose max-w-full dark:prose-invert"></div>
                     </div>
                     
                     <!-- Loading screen -->
                     <div id="loadingScreen" class="hidden flex-col items-center justify-center space-y-4 py-12">
                         <div class="w-12 h-12 border-4 border-primary-600 border-t-transparent rounded-full animate-spin"></div>
-                        <p class="text-lg font-medium text-neutral-700 dark:text-neutral-300">Analyzing your answers...</p>
+                        <p class="text-lg font-medium text-neutral-700 dark:text-neutral-300">Cevaplarınız analiz ediliyor...</p>
                     </div>
                 </div>
             </div>
@@ -206,13 +206,13 @@ function generateResultHTML(result) {
         <h4 class="text-xl font-semibold mb-4">${result.title}</h4>
         <div class="flex flex-col gap-4">
             <p class="mb-6">${result.description}</p>
-            <img src="${result.courseLink + '.png'}" alt="Course Preview" class="rounded-lg shadow-lg w-full max-w-lg mx-auto" />
+            <img src="${result.courseLink + '.png'}" alt="Kurs Önizlemesi" class="rounded-lg shadow-lg w-full max-w-lg mx-auto" />
             <div class="flex items-center justify-between">
                 <a href="${result.courseLink}" class="inline-block px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors">
-                    View Recommended Course
+                    Önerilen Kursu Görüntüle
                 </a>
                 <button id="retakeBtn" class="px-6 py-2 text-sm font-medium text-primary-600 border border-primary-600 rounded-lg hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-colors">
-                    Retake Test
+                    Testi Tekrar Çöz
                 </button>
             </div>
         </div>
@@ -265,7 +265,7 @@ function initializeQuiz() {
     document.getElementById('nextBtn')?.addEventListener('click', () => {
         const currentInput = document.querySelector(`input[name="q${currentQuestion + 1}"]:checked`);
         if (!currentInput) {
-            showNotification('Please select an answer before proceeding.');
+            showNotification('Lütfen devam etmeden önce bir cevap seçin.');
             return;
         }
         
@@ -293,7 +293,7 @@ function initializeQuiz() {
         for (let i = 1; i <= totalQuestions; i++) {
             const answer = document.querySelector(`input[name="q${i}"]:checked`);
             if (!answer) {
-                showNotification('Please answer all questions before submitting.');
+                showNotification('Lütfen göndermeden önce tüm soruları yanıtlayın.');
                 return;
             }
             answers.push({"question": i, "answer": Number(answer.value)});
@@ -345,7 +345,7 @@ function initializeQuiz() {
             document.getElementById('loadingScreen').classList.add('hidden');
             document.getElementById('loadingScreen').classList.remove('flex');
             document.getElementById('quizForm').classList.remove('hidden');
-            showNotification('An error occurred. Please try again.');
+            showNotification('Bir hata oluştu. Lütfen tekrar deneyin.');
         }
     });
 }

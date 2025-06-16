@@ -37,7 +37,7 @@ const sortedPosts = allPosts.sort((a: any, b: any) => {
 					<Post
 						link={`/blog/${post.id}`}
 						title={post.data.title}
-						subtitle={`By ${post.data.author} on ${new Date(post.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`}
+						subtitle={`${post.data.author} tarafından ${new Date(post.data.pubDate).toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric' })} tarihinde`}
 						image={post.data.image}
 						tags={post.data.tags}
 					>

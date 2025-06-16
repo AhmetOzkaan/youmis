@@ -30,15 +30,15 @@ const { posts } = Astro.props
 // Content
 // - SEO
 const SEO = {
-	title: `youMIS? | Posts tagged as ` + tag,
+	title: `youMIS? | "${tag}" etiketli gönderiler`,
 	description:
-		"Discover youMIS?'s latest insights and updates designed to enhance your remote team collaboration and productivity."
+		"youMIS?'in uzaktan ekip işbirliğinizi ve üretkenliğinizi artırmak için tasarlanmış en son içgörülerini ve güncellemelerini keşfedin."
 }
 
 // - Page Header
 const header = {
-	title: `youMIS? posts about <br><strong>` + tag + `</strong>`,
-	text: `Stay updated with the latest insights and developments from youMIS?.`
+	title: `youMIS? <br><strong>${tag}</strong> etiketli gönderiler`,
+	text: `youMIS?'in en son içgörüleri ve gelişmeleriyle güncel kalın.`
 }
 ---
 

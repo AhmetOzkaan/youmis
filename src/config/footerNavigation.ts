@@ -37,7 +37,7 @@ export const footerNavigationData: FooterData = {
 	footerAbout: {
 		title: 'youMIS?',
 		aboutText:
-				'Your AI-powered guide for navigating Management Information Systems education and career paths.',
+				'Yönetim Bilişim Sistemleri eğitimi ve kariyer yollarında gezinmek için yapay zeka destekli rehberiniz.',
 		logo: {
 			src: '/logo.jpeg',
 			alt: 'logo',
@@ -46,18 +46,18 @@ export const footerNavigationData: FooterData = {
 	},
 	footerColumns: [
 		{
-			category: 'Navigation',
+			category: 'Navigasyon',
 			subCategories: [
 				{
-					subCategory: 'Home',
+					subCategory: 'Anasayfa',
 					subCategoryLink: '/'
 				},
 				{
-					subCategory: 'MIS',
+					subCategory: 'YBS',
 					subCategoryLink: '/mis'
 				},
 				{
-					subCategory: 'Courses',
+					subCategory: 'Dersler',
 					subCategoryLink: '/courses'
 				},
 				{
@@ -67,23 +67,23 @@ export const footerNavigationData: FooterData = {
 			]
 		},
 		{
-			category: 'About Us',
+			category: 'Hakkımızda',
 			subCategories: [
 				{
-					subCategory: 'About',
+					subCategory: 'Hakkında',
 					subCategoryLink: '/about'
 				},
 				{
-					subCategory: 'Contact',
+					subCategory: 'İletişim',
 					subCategoryLink: '/contact'
 				}
 			]
 		},
 		{
-			category: 'Tools',
+			category: 'Araçlar',
 			subCategories: [
 				{
-					subCategory: 'Career Test',
+					subCategory: 'Kariyer Testi',
 					subCategoryLink: '/career-test'
 				}
 			]

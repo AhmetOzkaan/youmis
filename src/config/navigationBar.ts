@@ -39,17 +39,17 @@ export const navigationBarData: NavData = {
 		text: 'youMIS?'
 	},
 	navItems: [
-		{ name: 'Home', link: '/' },
+		{ name: 'Anasayfa', link: '/' },
 		{ name: 'MIS', link: '/mis' },
 		/*{
 			name: 'Courses',
 			link: '/courses',
 			submenu: courseSubmenu
 		},*/
-		{ name: 'Courses', link: '/courses' },
+		{ name: 'Kurslar', link: '/courses' },
 		{ name: 'Blog', link: '/blog' },
-		{ name: 'About', link: '/about' },
-		{ name: 'Contact', link: '/contact' }
+		{ name: 'Hakkımızda', link: '/about' },
+		{ name: 'İletişim', link: '/contact' }
 	],
-	navActions: [{ name: 'Career Test', link: '/career-test', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Kariyer Testi', link: '/career-test', style: 'primary', size: 'lg' }]
 }

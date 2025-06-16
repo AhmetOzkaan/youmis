@@ -39,10 +39,10 @@ const { tags, title, author, publishDate, image} = Astro.props
 				{
 					author ? (
 						<p class="page-header__text">
-							Written by, {author} {publishDate && 'on ' + publishDate}
+							Yazan, {author} {publishDate && ' - ' + publishDate} tarihinde yayınlandı
 						</p>
 					) : (
-						publishDate && <p class="page-header__text">Published on, {publishDate}</p>
+						publishDate && <p class="page-header__text">Yayınlanma Tarihi: {publishDate}</p>
 					)
 				}
 			</header>

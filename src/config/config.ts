@@ -21,13 +21,13 @@ export interface Config {
 }
 
 export const configData: Config = {
-	siteTitle: 'youMIS? - Your AI-powered career guide!',
+	siteTitle: 'youMIS? - Yapay zeka destekli kariyer rehberiniz!',
 	siteDescription:
-		'Your AI-powered career guide designed for Management Information Systems students!',
+		'Yönetim Bilişim Sistemleri öğrencileri için tasarlanmış, yapay zeka destekli kariyer rehberiniz!',
 	ogImage: '/og.jpg',
 	logo: {
 		src: '/favicon.png',
-		alt: 'youMIS logo'
+		alt: 'youMIS logosu'
 	},
 	canonical: true,
 	noindex: false,

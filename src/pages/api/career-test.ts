@@ -72,37 +72,37 @@ async function getAPIResult(answers: Answer[]) {
 const careerPaths: CareerPath[] = [
     {
         id: 1,
-        title: "Business Analysis",
+        title: "İş Analizi",
         courseLink: "/courses/business-analysis",
     },
     {
         id: 2,
-        title: "Data Analytics",
+        title: "Veri Analitiği",
         courseLink: "/courses/data-analytics",
     },
     {
         id: 3,
-        title: "Digital Marketing and E-Commerce",
+        title: "Dijital Pazarlama ve E-Ticaret",
         courseLink: "/courses/digital-marketing",
     },
     {
         id: 4,
-        title: "ERP and Business Processes",
+        title: "ERP ve İş Süreçleri",
         courseLink: "/courses/erp-and-processes",
     },
     {
         id: 5,
-        title: "Organizational Behavior and Corporate Communication",
+        title: "Organizasyonel Davranış ve Kurumsal İletişim",
         courseLink: "/courses/organizational-behavior",
     },
     {
         id: 6,
-        title: "Project and Strategy Management",
+        title: "Proje ve Strateji Yönetimi",
         courseLink: "/courses/project-strategy",
     },
     {
         id: 7,
-        title: "Software Development",
+        title: "Yazılım Geliştirme",
         courseLink: "/courses/software-development",
     }
 ];

@@ -15,15 +15,15 @@ import { getCollection } from 'astro:content'
 // Content
 // - SEO
 const SEO = {
-    title: 'youMIS? | Courses for Management Information Systems Students',
+    title: 'youMIS? | Yönetim Bilişim Sistemleri Öğrencileri için Kurslar',
     description:
-        "Access comprehensive courses and learning materials designed specifically for Management Information Systems students. Enhance your knowledge and skills with our curated educational content."
+        "Yönetim Bilişim Sistemleri öğrencileri için özel olarak tasarlanmış kapsamlı kurslara ve öğrenme materyallerine erişin. Özel olarak seçilmiş eğitim içeriğimizle bilgi ve becerilerinizi geliştirin."
 }
 // - Page Header
 const header = {
-    title: '<strong>youMIS?</strong> Courses',
-    subtitle: 'Learn at Your Own Place',
-    text: 'Comprehensive learning resources to help MIS students master essential concepts, technologies, and industry practices.'
+    title: '<strong>youMIS?</strong> Kursları',
+    subtitle: 'Kendi Hızınızda Öğrenin',
+    text: 'YBS öğrencilerinin temel kavramları, teknolojileri ve endüstri uygulamalarını öğrenmelerine yardımcı olacak kapsamlı öğrenme kaynakları.'
 }
 
 const allCourses = await getCollection('courses')
@@ -58,7 +58,7 @@ const allCourses = await getCollection('courses')
                                         href={`/courses/${course.id}`}
                                         class="px-4 py-2 bg-primary-600 hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-400 text-white rounded-md transition-colors"
                                     >
-                                        View Course
+                                        Kursa Göz At
                                     </a>
                                 </div>
                             </div>
