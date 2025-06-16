@@ -1,48 +1,48 @@
 ---
-title: 'Google I/O 2025: What to expect from Android 16, Android XR and Gemini'
+title: 'Google I/O 2025: Android 16, Android XR ve Gemini''den Neler Beklenmeli'
 pubDate: 2025-04-29T10:00:00Z
-description: 'Predictions for Google I/O 2025, covering potential announcements for Android 16, the Android XR platform, Gemini AI updates, Project Astra, Wear OS, and more.'
+description: 'Android 16, Android XR platformu, Gemini AI güncellemeleri, Project Astra, Wear OS ve daha fazlası için potansiyel duyuruları kapsayan Google I/O 2025 tahminleri.'
 author: 'David Oygenblik, Brendan Saltaformaggio'
 image: '/blog/google-io.jpg'
-tags: ['Google', 'Android', 'AI']
+tags: ['Google', 'Android', 'Yapay Zeka']
 ---
 
-> “In a couple of weeks, Google's annual developer conference will kick off on May 20. The event is probably the most important on the company's calendar, offering a glimpse at everything it has been working on over the past year. Judging from rumors and information Google has trickled out, I/O 2025 should be one of the more exciting tech keynotes in recent memory. Plus, this year Google has a dedicated Android showcase planned a whole week earlier. If you want to know what to expect from the company later this month, read on.”
+> “Birkaç hafta içinde Google'ın yıllık geliştirici konferansı 20 Mayıs'ta başlayacak. Etkinlik muhtemelen şirketin takvimindeki en önemli etkinlik olup, geçtiğimiz yıl üzerinde çalıştığı her şeye bir bakış sunuyor. Söylentilere ve Google'ın sızdırdığı bilgilere bakılırsa, I/O 2025 son zamanların en heyecan verici teknoloji sunumlarından biri olmalı. Ayrıca, bu yıl Google bir hafta önce özel bir Android tanıtımı planladı. Bu ayın sonlarında şirketten neler bekleyeceğinizi öğrenmek istiyorsanız, okumaya devam edin.”
 
-In a couple of weeks, Google's annual developer conference will kick off on May 20. The event is probably the most important on the company's calendar, offering a glimpse at everything it has been working on over the past year.
+Birkaç hafta içinde Google'ın yıllık geliştirici konferansı 20 Mayıs'ta başlayacak. Etkinlik muhtemelen şirketin takvimindeki en önemli etkinlik olup, geçtiğimiz yıl üzerinde çalıştığı her şeye bir bakış sunuyor.
 
-Judging from rumors and information Google has trickled out, I/O 2025 should be one of the more exciting tech keynotes in recent memory. Plus, this year Google has a dedicated Android showcase planned a whole week earlier. If you want to know what to expect from the company later this month, read on.
+Söylentilere ve Google'ın sızdırdığı bilgilere bakılırsa, I/O 2025 son zamanların en heyecan verici teknoloji sunumlarından biri olmalı. Ayrıca, bu yıl Google bir hafta önce özel bir Android tanıtımı planladı. Bu ayın sonlarında şirketten neler bekleyeceğinizi öğrenmek istiyorsanız, okumaya devam edin.
 
 ### Android 16
 
-In years past, some of my favorite I/O moments involved watching Dave Burke take to the Shoreline stage to talk about the latest updates for Android. But for the past couple of years, Android hasn't had much of a spotlight at Google's annual developer conference. That's about to change, with the company hosting a dedicated showcase that will air a week before I/O proper. Scheduled for May 13, Google says it has "so many things to share" during the Android Show: I/O Edition.
+Geçmiş yıllarda, en sevdiğim I/O anlarından bazıları Dave Burke'ün Shoreline sahnesine çıkıp Android için en son güncellemeler hakkında konuşmasını izlemekti. Ancak son birkaç yıldır Android, Google'ın yıllık geliştirici konferansında pek fazla ilgi görmedi. Bu durum, şirketin I/O'dan bir hafta önce yayınlanacak özel bir tanıtım düzenlemesiyle değişmek üzere. 13 Mayıs'ta yapılması planlanan Android Show: I/O Edition sırasında Google'ın "paylaşacak çok şeyi" olduğunu söylüyor.
 
-The presentation will feature Android Ecosystem President Sameer Samat, who took over for Burke in 2024. As for what to expect from Samat and company, a preview of Android 16 is an obvious bet. Google has already confirmed the new operating system will arrive sometime before the second half of the year. As such, it may even release a stable build of Android 16 that same day. One feature Google could announce for Android 16 is Live Activities-like "Ongoing notifications". Per Android Authority, Google could also add a more robust photo picker, with support for cloud storage solutions.
+Sunumda, 2024'te Burke'ün yerini alan Android Ekosistem Başkanı Sameer Samat yer alacak. Samat ve şirketinden ne bekleneceğine gelince, Android 16'nın bir önizlemesi bariz bir bahis. Google, yeni işletim sisteminin yılın ikinci yarısından önce bir ara geleceğini zaten doğruladı. Bu nedenle, aynı gün Android 16'nın kararlı bir sürümünü bile yayınlayabilir. Google'ın Android 16 için duyurabileceği bir özellik, Live Activities benzeri "Devam eden bildirimler". Android Authority'ye göre, Google ayrıca bulut depolama çözümleri desteğiyle daha sağlam bir fotoğraf seçici de ekleyebilir.
 
 ### Android XR
 
-Remember Google Glass? No, how about Daydream? Maybe Cardboard? After sending (at least) three XR projects to the graveyard, you would think even Google would say enough is enough. Instead, the company is preparing to release Android XR after previewing the platform at the end of last year. This time around, the company says the power of its Gemini AI models will make things different. We know Google is working with Samsung on a headset codenamed Project Moohan. Last fall, Samsung hinted that the device could arrive sometime this year.
+Google Glass'ı hatırlıyor musunuz? Hayır mı, peki ya Daydream? Belki Cardboard? (En az) üç XR projesini mezarlığa gönderdikten sonra, Google'ın bile yeter artık diyeceğini düşünürsünüz. Bunun yerine şirket, geçen yılın sonunda platformu önizledikten sonra Android XR'yi yayınlamaya hazırlanıyor. Bu kez şirket, Gemini AI modellerinin gücünün işleri farklı kılacağını söylüyor. Google'ın Samsung ile Project Moohan kod adlı bir başlık üzerinde çalıştığını biliyoruz. Geçen sonbaharda Samsung, cihazın bu yıl içinde gelebileceğine dair ipucu verdi.
 
-Whether Google and Samsung demo Project Moohan at I/O, I imagine the search giant will have more to say about Android XR and the ecosystem partners it has worked to bring to its side for the initiative.
+Google ve Samsung'un I/O'da Project Moohan'ı tanıtıp tanıtmayacağı bir yana, arama devinin Android XR ve bu girişim için yanına çekmek için çalıştığı ekosistem ortakları hakkında daha fazla şey söyleyeceğini tahmin ediyorum.
 
-### AI, AI and more AI
+### Yapay Zeka, Yapay Zeka ve Daha Fazla Yapay Zeka
 
-If Google felt the need to split off Android into its own showcase, we're likely to get more AI-related announcements at I/O than ever before. The company hasn't provided many hints about what we can expect on that front, but if I had to guess, features like AI Overviews and AI Mode are likely to get substantive updates. I suspect Google will also have something to say about Project Mariner, the web-surfing agent it demoed at I/O 2024. Either way, Google is an AI company now, and every I/O moving forward will reflect that.
+Google, Android'i kendi vitrinine ayırma ihtiyacı hissettiyse, I/O'da muhtemelen her zamankinden daha fazla yapay zeka ile ilgili duyuru alacağız. Şirket bu konuda neler bekleyebileceğimize dair pek fazla ipucu vermedi, ancak tahmin etmem gerekirse, AI Overviews ve AI Mode gibi özelliklerin önemli güncellemeler alması muhtemel. Google'ın I/O 2024'te tanıttığı web'de gezinen ajan olan Project Mariner hakkında da bir şeyler söyleyeceğinden şüpheleniyorum. Her iki durumda da, Google artık bir yapay zeka şirketi ve bundan sonraki her I/O bunu yansıtacak.
 
-### Project Astra
+### Proje Astra
 
-Speaking of AI, Project Astra was one of the more impressive demos Google showed off at I/O 2024. The technology made the most of the latest multi-modal capabilities of Google's Gemini models to offer something we hadn't seen before from the company. It's a voice assistant with advanced image recognition features that allows it to converse about the things it sees. Google envisions Project Astra one day providing a truly useful artificial assistant.
+Yapay zekadan bahsetmişken, Project Astra, Google'ın I/O 2024'te sergilediği en etkileyici demolardan biriydi. Teknoloji, Google'ın Gemini modellerinin en son çok modlu yeteneklerinden en iyi şekilde yararlanarak şirketten daha önce görmediğimiz bir şey sundu. Gördüğü şeyler hakkında sohbet etmesini sağlayan gelişmiş görüntü tanıma özelliklerine sahip bir sesli asistandır. Google, Project Astra'nın bir gün gerçekten kullanışlı bir yapay asistan sağlayacağını öngörüyor.
 
-However, after seeing an in-person demo of Astra, the Engadget crew felt the tech needed a lot more work. Given the splash Project Astra made last year, there's a good chance we could get an update on it at I/O 2025.
+Ancak, Astra'nın yüz yüze bir demosunu gördükten sonra, Engadget ekibi teknolojinin çok daha fazla çalışmaya ihtiyacı olduğunu hissetti. Project Astra'nın geçen yıl yarattığı etki göz önüne alındığında, I/O 2025'te bununla ilgili bir güncelleme alma olasılığımız yüksek.
 
 ### Wear OS
 
-Last year, Wear OS didn't get a mention during the company's main keynote, but Google did preview Wear OS 5 during the developer sessions that followed. The company only began rolling out Wear OS 5.1 to Pixel devices in March. Given that, you might expect Google wouldn't have much new to share, but the official Wear OS X account told fans to watch the Android Show for updates.
+Geçen yıl Wear OS, şirketin ana açılış konuşmasında yer almadı, ancak Google, ardından gelen geliştirici oturumları sırasında Wear OS 5'i tanıttı. Şirket, Wear OS 5.1'i Pixel cihazlarına ancak Mart ayında dağıtmaya başladı. Bu göz önüne alındığında, Google'ın paylaşacak çok fazla yeniliği olmayacağını düşünebilirsiniz, ancak resmi Wear OS X hesabı hayranlara güncellemeler için Android Show'u izlemelerini söyledi.
 
 ### NotebookLM
 
-Since 2023, Google has offered NotebookLM on desktop. The note-taking app uses machine learning for features like automated summaries. Based on App Store and Google Play listings, the company is getting ready to release a mobile version of the service on the first day of I/O 2025.
+2023'ten beri Google, masaüstünde NotebookLM'yi sunuyor. Not alma uygulaması, otomatik özetler gibi özellikler için makine öğrenimini kullanıyor. App Store ve Google Play listelerine göre şirket, hizmetin mobil sürümünü I/O 2025'in ilk gününde yayınlamaya hazırlanıyor.
 
-### Everything else
+### Diğer Her Şey
 
-Google has a terrible track record when it comes to preventing leaks within its internal ranks, so the likelihood the company could surprise us is low. Still, Google could announce something we don't expect. As always, your best bet is to visit Engadget on May 20 and 21. We'll have all the latest from Google then along with our liveblog and analysis.
+Google'ın kendi içindeki sızıntıları önleme konusunda berbat bir geçmişi var, bu nedenle şirketin bizi şaşırtma olasılığı düşük. Yine de Google beklemediğimiz bir şey duyurabilir. Her zaman olduğu gibi, en iyi seçeneğiniz 20 ve 21 Mayıs'ta Engadget'ı ziyaret etmek. O zaman Google'dan en son haberlerin yanı sıra canlı blogumuzu ve analizlerimizi de bulacaksınız.

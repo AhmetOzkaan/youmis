@@ -1,62 +1,62 @@
 ---
-title: 'Grand Theft Auto 6 delayed until May 2026'
+title: 'Grand Theft Auto 6, Mayıs 2026''ya Ertelendi'
 pubDate: 2025-05-03T12:00:00Z
-description: 'Rockstar Games announces a delay for the highly anticipated Grand Theft Auto 6, pushing the release to May 2026, citing quality standards and sparking fan reactions.'
+description: 'Rockstar Games, merakla beklenen Grand Theft Auto 6 için bir erteleme duyurdu ve kalite standartlarını gerekçe göstererek çıkış tarihini Mayıs 2026''ya erteledi ve hayran tepkilerini ateşledi.'
 author: 'Peter Gillibrand, Tom Richardson'
 image: '/blog/gta.png'
-tags: ['gaming']
+tags: ['Oyun']
 ---
 
-> “Grand Theft Auto 6 - one of the most eagerly awaited releases of all time - has been delayed until May 2026. The sequel in developer Rockstar Games' record-breaking video game series was due to be released on consoles later this year. But it told fans it needed extra time to "deliver at the level of quality you expect and deserve".”
+> “Tüm zamanların en merakla beklenen oyunlarından biri olan Grand Theft Auto 6, Mayıs 2026'ya ertelendi. Geliştirici Rockstar Games'in rekor kıran video oyunu serisinin devamı bu yılın sonlarında konsollarda piyasaya sürülecekti. Ancak hayranlarına "beklediğiniz ve hak ettiğiniz kalite seviyesinde sunmak" için ekstra zamana ihtiyaçları olduğunu söyledi.”
 
-Grand Theft Auto 6 - one of the most eagerly awaited releases of all time - has been delayed until May 2026.
+Grand Theft Auto 6 - tüm zamanların en merakla beklenen oyunlarından biri - Mayıs 2026'ya ertelendi.
 
-The sequel in developer Rockstar Games' record-breaking video game series was due to be released on consoles later this year.
+Geliştirici Rockstar Games'in rekor kıran video oyunu serisinin devamı bu yılın sonlarında konsollarda piyasaya sürülecekti.
 
-But it told fans it needed extra time to "deliver at the level of quality you expect and deserve".
+Ancak hayranlarına "beklediğiniz ve hak ettiğiniz kalite seviyesinde sunmak" için ekstra zamana ihtiyaçları olduğunu söyledi.
 
-The previous game in the series, GTA 5, is the second-best selling video game of all time and remains extremely popular thanks to its online mode.
+Serinin bir önceki oyunu olan GTA 5, tüm zamanların en çok satan ikinci video oyunu ve çevrimiçi modu sayesinde son derece popüler olmaya devam ediyor.
 
-Little official information on GTA 6 has emerged since a trailer for the game was released in December 2023, quickly reaching over 100m views.
+GTA 6 hakkında, Aralık 2023'te yayınlanan ve hızla 100 milyonun üzerinde izlenmeye ulaşan bir fragmandan bu yana çok az resmi bilgi ortaya çıktı.
 
-The 90-second clip revealed two main protagonists, and a glimpse of the game's fictional, Florida-inspired setting Leonida.
+90 saniyelik klip, iki ana kahramanı ve oyunun kurgusal, Florida'dan ilham alan ortamı Leonida'ya bir bakış sundu.
 
-In its statement, Rockstar said the "interest and excitement" in the game had been "truly humbling for our entire team".
+Rockstar yaptığı açıklamada, oyuna yönelik "ilgi ve heyecanın" "tüm ekibimiz için gerçekten gurur verici" olduğunu söyledi.
 
-The company is known for its long development cycles and the 12-year gap since GTA 5's release has sparked a wave of jokes and memes online.
+Şirket uzun geliştirme döngüleriyle tanınıyor ve GTA 5'in piyasaya sürülmesinden bu yana geçen 12 yıllık boşluk, internette bir şaka ve mem dalgasına yol açtı.
 
-It also has a track record of delaying major releases, such as 2018's Red Dead Redemption 2 - the studio's last big new game.
+Ayrıca, stüdyonun son büyük yeni oyunu olan 2018 yapımı Red Dead Redemption 2 gibi büyük sürümleri erteleme konusunda da bir geçmişi var.
 
-But Rockstar is also known for its perfectionist approach and Straus Zelnick, CEO of parent company Take Two Interactive, previously said each new game from the developer "needs to be something you've never seen before".
+Ancak Rockstar aynı zamanda mükemmeliyetçi yaklaşımıyla da tanınıyor ve ana şirket Take Two Interactive'in CEO'su Straus Zelnick daha önce geliştiriciden çıkan her yeni oyunun "daha önce hiç görmediğiniz bir şey olması gerektiğini" söylemişti.
 
-### 'I'm getting impatient at this point'
+### 'Bu noktada sabırsızlanıyorum'
 
-News of the delay has landed hard with fans such as Dienne Kawende, 27.
+Erteleme haberi, 27 yaşındaki Dienne Kawende gibi hayranlar için ağır oldu.
 
-"I'm absolutely furious right now," he tells BBC Newsbeat.
+BBC Newsbeat'e konuşan Dienne, "Şu anda kesinlikle öfkeliyim," diyor.
 
-"There's fire flowing through my body right now."
+"Şu anda vücudumdan ateş akıyor."
 
-GTA 6 will only be available on PlayStation 5 and Xbox at launch, meaning owners of older consoles will need to upgrade to play it.
+GTA 6, lansman sırasında yalnızca PlayStation 5 ve Xbox'ta mevcut olacak, yani eski konsol sahiplerinin oynamak için yükseltme yapması gerekecek.
 
-Sony and Microsoft recently announced price increases for both machines.
+Sony ve Microsoft kısa süre önce her iki makine için de fiyat artışları duyurdu.
 
-"This year, I literally got a job just to save up to get a Playstation 5," says Dienne.
+Dienne, "Bu yıl, kelimenin tam anlamıyla bir Playstation 5 almak için para biriktirmek üzere bir işe girdim," diyor.
 
-"It's all ruined now."
+"Şimdi her şey mahvoldu."
 
-Although he praises Rockstar for making "amazing" and complex games, the 12-year wait is getting too much for him.
+Rockstar'ı "harika" ve karmaşık oyunlar yaptığı için övse de, 12 yıllık bekleyiş onun için çok fazla oluyor.
 
-"I'm getting really impatient at this point," he says.
+"Bu noktada gerçekten sabırsızlanıyorum," diyor.
 
-"When GTA 5 came out, I was in school. I was a teenager. I might start having kids soon.
+"GTA 5 çıktığında okuldaydım. Bir gençtim. Yakında çocuk sahibi olmaya başlayabilirim.
 
-"I might not even have time to play GTA 6 when it comes out."
+"GTA 6 çıktığında oynamak için zamanım bile olmayabilir."
 
-GTA 6 is expected to break sales records when it is released, possibly surpassing its predecessor, the highest-grossing video game launch of all time.
+GTA 6'nın piyasaya sürüldüğünde satış rekorları kırması ve muhtemelen tüm zamanların en çok hasılat yapan video oyunu lansmanı olan selefini geçmesi bekleniyor.
 
-The global video games industry has been hit by waves of studio closures and layoffs over the past two years.
+Küresel video oyunları endüstrisi son iki yıldır stüdyo kapanmaları ve işten çıkarmalarla sarsıldı.
 
-It was hoped that a new Rockstar release might inspire more people to buy a new console, or drive interest in gaming more widely.
+Yeni bir Rockstar sürümünün daha fazla insanı yeni bir konsol almaya teşvik edeceği veya genel olarak oyunlara olan ilgiyi artıracağı umuluyordu.
 
-However, it does mean that other publishers who might have been holding off on announcing new games out of fear of clashing with GTA 6 might now look to release theirs before the end of this year.
+Ancak bu, GTA 6 ile çakışma korkusuyla yeni oyunlarını duyurmaktan çekinen diğer yayıncıların artık bu yılın sonundan önce kendi oyunlarını yayınlamaya çalışabilecekleri anlamına geliyor.
