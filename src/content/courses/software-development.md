@@ -1,81 +1,81 @@
 ---
-title: "Software Development"
-description: "Educational content prepared at various levels to help you improve yourself in the field of software development. You can benefit from these resources to start programming or take your skills to the next level."
+title: "Yazılım Geliştirme"
+description: "Yazılım geliştirme alanında kendinizi geliştirmenize yardımcı olmak için çeşitli seviyelerde hazırlanmış eğitim içerikleri. Programlamaya başlamak veya mevcut becerilerinizi bir üst seviyeye taşımak için bu kaynaklardan faydalanabilirsiniz."
 image: "/courses/software-development.png"
 ---
-## 🎯 Educational Content
+## 🎯 Eğitim İçerikleri
 
-### YouTube Resources
+### YouTube Kaynakları
 
-#### Python Programming
-- **🇹🇷 Turkish Resource:** [Python Lessons](https://youtube.com/playlist?list=PL3kMAPso9YQ1Ls-5uTTIWWMkJoF_vyj5J)
-  *Comprehensive Python training from basic concepts to advanced level*
-- **🌍 English Resource:** [Python Programming](https://youtube.com/playlist?list=PLWKjhJtqVAbnqBxcdjVGgT3uVR10bzTEB)
-  *Practical Python programming with real-world examples*
+#### Python Programlama
+- **🇹🇷 Türkçe Kaynak:** [Python Dersleri](https://youtube.com/playlist?list=PL3kMAPso9YQ1Ls-5uTTIWWMkJoF_vyj5J)
+  *Temel kavramlardan ileri seviyeye kadar kapsamlı Python eğitimi*
+- **🌍 İngilizce Kaynak:** [Python Programming](https://youtube.com/playlist?list=PLWKjhJtqVAbnqBxcdjVGgT3uVR10bzTEB)
+  *Gerçek dünya örnekleriyle pratik Python programlama*
 
-#### Web Development (HTML-CSS)
-- **🇹🇷 Turkish Resource:** [HTML and CSS Training](https://youtube.com/playlist?list=PLURN6mxdcwL_D8H1iki2YCmp-lNyNAdbz)
-  *Fundamentals of modern web design*
-- **🌍 English Resource:** [HTML & CSS Tutorials](https://youtube.com/playlist?list=PLWKjhJtqVAbnSe1qUNMG7AbPmjIG54u88)
-  *Complete guide to modern web development*
+#### Web Geliştirme (HTML-CSS)
+- **🇹🇷 Türkçe Kaynak:** [HTML ve CSS Eğitimi](https://youtube.com/playlist?list=PLURN6mxdcwL_D8H1iki2YCmp-lNyNAdbz)
+  *Modern web tasarımının temelleri*
+- **🌍 İngilizce Kaynak:** [HTML & CSS Tutorials](https://youtube.com/playlist?list=PLWKjhJtqVAbnSe1qUNMG7AbPmjIG54u88)
+  *Modern web geliştirmeye dair kapsamlı rehber*
 
 #### JavaScript
-- **🇹🇷 Turkish Resource:** [JavaScript Lessons](https://youtube.com/playlist?list=PLURN6mxdcwL86Q8tCF1Ef6G6rN2jAg5Ht)
-  *Comprehensive training from JavaScript basics to advanced level*
-- **🌍 English Resource:** [JavaScript Course](https://youtube.com/playlist?list=PLZPZq0r_RZOO1zkgO4bIdfuLpizCeHYKv)
-  *Comprehensive JavaScript course with practical examples*
+- **🇹🇷 Türkçe Kaynak:** [JavaScript Dersleri](https://youtube.com/playlist?list=PLURN6mxdcwL86Q8tCF1Ef6G6rN2jAg5Ht)
+  *JavaScript temellerinden ileri seviyeye kadar kapsamlı eğitim*
+- **🌍 İngilizce Kaynak:** [JavaScript Course](https://youtube.com/playlist?list=PLZPZq0r_RZOO1zkgO4bIdfuLpizCeHYKv)
+  *Pratik örneklerle kapsamlı JavaScript kursu*
 
 #### Java
-- **🇹🇷 Turkish Resource:** [Java Programming](https://youtube.com/playlist?list=PLEcJSEQK_cD5KHgg9sXumeg659hAr2j4W)
-  *Fundamentals of Java programming and advanced topics*
-- **🌍 English Resource:** [Java Tutorial](https://youtu.be/xTtL8E4LzTQ)
-  *In-depth Java programming tutorial*
+- **🇹🇷 Türkçe Kaynak:** [Java Programlama](https://youtube.com/playlist?list=PLEcJSEQK_cD5KHgg9sXumeg659hAr2j4W)
+  *Java programlamanın temelleri ve ileri konular*
+- **🌍 İngilizce Kaynak:** [Java Tutorial](https://youtu.be/xTtL8E4LzTQ)
+  *Derinlemesine Java programlama eğitimi*
 
 #### C#
-- **🇹🇷 Turkish Resource:** [C# Lessons](https://youtube.com/playlist?list=PLKnjBHu2xXNPmFMvGKVHA_ijjrgUyNIXr)
-  *Fundamentals of C# programming and advanced topics*
-- **🌍 English Resource:** [C# Programming](https://youtube.com/playlist?list=PLZPZq0r_RZOPNy28FDBys3GVP2LiaIyP_)
-  *Comprehensive C# programming course*
+- **🇹🇷 Türkçe Kaynak:** [C# Dersleri](https://youtube.com/playlist?list=PLKnjBHu2xXNPmFMvGKVHA_ijjrgUyNIXr)
+  *C# programlamanın temelleri ve ileri konular*
+- **🌍 İngilizce Kaynak:** [C# Programming](https://youtube.com/playlist?list=PLZPZq0r_RZOPNy28FDBys3GVP2LiaIyP_)
+  *Kapsamlı C# programlama kursu*
 
-## 📚 Udemy Courses
+## 📚 Udemy Kursları
 
-### Beginner Level
-- **Python Programming Masterclass**
-  *Learn Python from scratch to advanced level*
-  [Go to Course ↗](https://www.udemy.com/course/sifirdan-ileri-seviye-python-programlama/)
+### Başlangıç Seviyesi
+- **Python Programlama Masterclass**
+  *Python'u sıfırdan ileri seviyeye öğrenin*
+  [Kursa Git ↗](https://www.udemy.com/course/sifirdan-ileri-seviye-python-programlama/)
 
-- **Basic Web Software Course**
-  *Learn the fundamentals of web development with HTML and CSS*
-  [Go to Course ↗](https://www.udemy.com/course/bilgisayar-ogretmeninden-temel-web-yazlm-kursu/)
+- **Temel Web Yazılım Kursu**
+  *HTML ve CSS ile web geliştirmenin temellerini öğrenin*
+  [Kursa Git ↗](https://www.udemy.com/course/bilgisayar-ogretmeninden-temel-web-yazlm-kursu/)
 
-- **JavaScript Training**
-  *Learn the fundamentals of JavaScript*
-  [Go to Course ↗](https://www.udemy.com/course/javascript-egitimi/)
+- **JavaScript Eğitimi**
+  *JavaScript'in temellerini öğrenin*
+  [Kursa Git ↗](https://www.udemy.com/course/javascript-egitimi/)
 
-- **Java Programming Training**
-  *Learn the fundamentals of Java programming*
-  [Go to Course ↗](https://www.udemy.com/course/javaprogramlamaegitimi/)
+- **Java Programlama Eğitimi**
+  *Java programlamanın temellerini öğrenin*
+  [Kursa Git ↗](https://www.udemy.com/course/javaprogramlamaegitimi/)
 
-- **C# Programming**
-  *Learn the fundamentals of C# programming*
-  [Go to Course ↗](https://www.udemy.com/course/csharp-programlama-visual-studio-2022-ile-sifirdan-uzmanliga-yazilim/)
+- **C# Programlama**
+  *C# programlamanın temellerini öğrenin*
+  [Kursa Git ↗](https://www.udemy.com/course/csharp-programlama-visual-studio-2022-ile-sifirdan-uzmanliga-yazilim/)
 
-### Advanced Level
-- **Web Development Bootcamp**
-  *Learn modern web development technologies*
-  [Go to Course ↗](https://www.udemy.com/course/the-complete-web-development-bootcamp/)
+### İleri Seviye
+- **Web Geliştirme Bootcamp**
+  *Modern web geliştirme teknolojilerini öğrenin*
+  [Kursa Git ↗](https://www.udemy.com/course/the-complete-web-development-bootcamp/)
 
-- **Complete Java Developer Course**
-  *Learn advanced topics in Java programming*
-  [Go to Course ↗](https://www.udemy.com/course/java-the-complete-java-developer-course/)
+- **Java Geliştirici Kursu**
+  *Java programlamada ileri konuları öğrenin*
+  [Kursa Git ↗](https://www.udemy.com/course/java-the-complete-java-developer-course/)
 
 - **C# Masterclass**
-  *Learn advanced topics in C# programming*
-  [Go to Course ↗](https://www.udemy.com/course/complete-csharp-masterclass/)
+  *C# programlamada ileri konuları öğrenin*
+  [Kursa Git ↗](https://www.udemy.com/course/complete-csharp-masterclass/)
 
-## 💡 Tips
+## 💡 İpuçları
 
-- Define your learning goals before starting the training
-- Develop your own projects for practice
-- Interact with online communities
-- Develop a regular coding habit
+- Eğitime başlamadan önce öğrenme hedeflerinizi belirleyin
+- Pratik yapmak için kendi projelerinizi geliştirin
+- Çevrimiçi topluluklarla etkileşimde bulunun
+- Düzenli bir kodlama alışkanlığı geliştirin
