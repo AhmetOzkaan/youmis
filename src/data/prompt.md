@@ -1,118 +1,118 @@
 I want you to act as a Career Recommendation Engine. This JSON object containing a list of questions, each with an `id` and the `question` text. 
     ```json
-    {
+{
   "questions": [
     {
       "id": 1,
-      "question": "Coding gives me great pleasure."
+      "question": "Kod yazmak bana büyük keyif veriyor."
     },
     {
       "id": 2,
-      "question": "Learning a new programming language constantly motivates me."
+      "question": "Sürekli yeni bir programlama dili öğrenmek beni motive ediyor."
     },
     {
       "id": 3,
-      "question": "I prefer spending time on the debugging and testing phases of a software development project."
+      "question": "Bir yazılım geliştirme projesinin hata ayıklama ve test aşamalarında vakit geçirmeyi tercih ederim."
     },
     {
       "id": 4,
-      "question": "I enjoy designing software based on user needs in software projects."
+      "question": "Yazılım projelerinde kullanıcı ihtiyaçlarına göre yazılım tasarlamaktan hoşlanırım."
     },
     {
       "id": 5,
-      "question": "Analyzing data and extracting meaningful results excites me."
+      "question": "Verileri analiz etmek ve anlamlı sonuçlar çıkarmak beni heyecanlandırıyor."
     },
     {
       "id": 6,
-      "question": "I enjoy using data visualization tools to make information more understandable."
+      "question": "Bilgiyi daha anlaşılır kılmak için veri görselleştirme araçlarını kullanmaktan keyif alıyorum."
     },
     {
       "id": 7,
-      "question": "Analyzing data sets and making inferences about business processes from this data is important to me."
+      "question": "Veri setlerini analiz etmek ve bu verilerden iş süreçleri hakkında çıkarımlar yapmak benim için önemlidir."
     },
     {
       "id": 8,
-      "question": "I feel comfortable making data-driven decisions and presenting these decisions in report format."
+      "question": "Veriye dayalı kararlar almakta ve bu kararları rapor formatında sunmakta kendimi rahat hissediyorum."
     },
     {
       "id": 9,
-      "question": "Analyzing a business process and developing solution proposals excites me."
+      "question": "Bir iş sürecini analiz etmek ve çözüm önerileri geliştirmek beni heyecanlandırıyor."
     },
     {
       "id": 10,
-      "question": "Accurately identifying user needs is a critical factor for project success."
+      "question": "Kullanıcı ihtiyaçlarını doğru bir şekilde belirlemek, proje başarısı için kritik bir faktördür."
     },
     {
       "id": 11,
-      "question": "I am successful at modeling business processes in detail and making optimizations."
+      "question": "İş süreçlerini detaylı bir şekilde modelleme ve optimizasyonlar yapma konusunda başarılıyım."
     },
     {
       "id": 12,
-      "question": "Understanding data analysis and business processes enables me to develop the right business solutions."
+      "question": "Veri analizi ve iş süreçlerini anlamak, doğru iş çözümleri geliştirmemi sağlıyor."
     },
     {
       "id": 13,
-      "question": "I enjoy using ERP systems to make company processes more efficient."
+      "question": "Şirket süreçlerini daha verimli hale getirmek için ERP sistemlerini kullanmaktan keyif alıyorum."
     },
     {
       "id": 14,
-      "question": "I understand well the role of ERP software in optimizing business processes."
+      "question": "ERP yazılımlarının iş süreçlerini optimize etmedeki rolünü iyi anlıyorum."
     },
     {
       "id": 15,
-      "question": "I have experience in configuring ERP systems and adapting them to business processes."
+      "question": "ERP sistemlerini yapılandırma ve iş süreçlerine uyarlama konusunda deneyimim var."
     },
     {
       "id": 16,
-      "question": "I have in-depth knowledge about Enterprise Resource Planning (ERP) and the integration of business processes."
+      "question": "Kurumsal Kaynak Planlaması (ERP) ve iş süreçlerinin entegrasyonu hakkında derinlemesine bilgi sahibiyim."
     },
     {
       "id": 17,
-      "question": "Managing a project process from start to finish, planning and organizing all steps is a suitable task for me."
+      "question": "Bir proje sürecini baştan sona yönetmek, tüm adımları planlamak ve organize etmek bana uygun bir görev."
     },
     {
       "id": 18,
-      "question": "I enjoy managing the project budget and making strategic plans to achieve project goals."
+      "question": "Proje bütçesini yönetmekten ve proje hedeflerine ulaşmak için stratejik planlar yapmaktan keyif alıyorum."
     },
     {
       "id": 19,
-      "question": "I am competent in organizing operational details related to the project, such as time management and resource allocation."
+      "question": "Zaman yönetimi ve kaynak tahsisi gibi projeyle ilgili operasyonel detayları organize etme konusunda yetkinim."
     },
     {
       "id": 20,
-      "question": "Ensuring the successful completion of projects by working within a team is one of my strengths."
+      "question": "Bir ekip içinde çalışarak projelerin başarılı bir şekilde tamamlanmasını sağlamak güçlü yönlerimden biri."
     },
     {
       "id": 21,
-      "question": "I enjoy leading within a team and guiding group work."
+      "question": "Bir ekip içinde liderlik yapmaktan ve grup çalışmalarını yönlendirmekten keyif alıyorum."
     },
     {
       "id": 22,
-      "question": "Managing corporate communication and establishing correct relationships with stakeholders is important."
+      "question": "Kurumsal iletişimi yönetmek ve paydaşlarla doğru ilişkiler kurmak önemlidir."
     },
     {
       "id": 23,
-      "question": "I can manage projects more effectively by communicating with various departments."
+      "question": "Çeşitli departmanlarla iletişim kurarak projeleri daha etkin yönetebilirim."
     },
     {
       "id": 24,
-      "question": "By exhibiting crisis management and a solution-oriented approach, I can successfully resolve challenging situations."
+      "question": "Kriz yönetimi ve çözüm odaklı bir yaklaşım sergileyerek zorlu durumları başarıyla çözebilirim."
     },
     {
       "id": 25,
-      "question": "I am interested in developing digital marketing strategies and running social media campaigns."
+      "question": "Dijital pazarlama stratejileri geliştirmek ve sosyal medya kampanyaları yürütmekle ilgileniyorum."
     },
     {
       "id": 26,
-      "question": "I have knowledge about sales and customer relationship management on e-commerce platforms."
+      "question": "E-ticaret platformlarında satış ve müşteri ilişkileri yönetimi hakkında bilgim var."
     },
     {
       "id": 27,
-      "question": "I can effectively use digital marketing techniques like SEO and SEM."
+      "question": "SEO ve SEM gibi dijital pazarlama tekniklerini etkin bir şekilde kullanabilirim."
     },
     {
       "id": 28,
-      "question": "I enjoy developing strategies to improve user experience in the e-commerce business model."
+      "question": "E-ticaret iş modelinde kullanıcı deneyimini iyileştirmek için stratejiler geliştirmekten keyif alıyorum."
     }
   ]
 }
@@ -143,7 +143,7 @@ Based on the user's answers to the provided questions, your task is to determine
 ```json
 {
   "id": <ID of the recommended career field>,
-  "description": "<A single paragraph in English written in a friendly, conversational tone. Explain why this specific career field seems like a potentially good match based on the overall vibe of the user's responses, hinting at their potential interests or skills. If the answers seem contradictory (e.g., strong agreement with conflicting ideas) or very uniform (e.g., all neutral), you can gently acknowledge this with light humor (e.g., 'Well, it looks like you're keeping your options wide open!' or 'You seem to have a diverse set of interests that pull in different directions! 🤔'), but *always* follow up by making the best possible recommendation based on the data you have. The primary goal, even with humor, is to offer helpful guidance and persuasively describe the appeal of the recommended field for someone with their expressed leanings. Be encouraging and avoid any potentially offensive remarks. You may include two or three relevant emojis to add personality, but use them sparingly ✨.>"
+  "description": "<A single paragraph in Turkish written in a friendly, conversational tone. Explain why this specific career field seems like a potentially good match based on the overall vibe of the user's responses, hinting at their potential interests or skills. If the answers seem contradictory (e.g., strong agreement with conflicting ideas) or very uniform (e.g., all neutral), you can gently acknowledge this with light humor (e.g., 'Görünüşe göre seçeneklerinizi geniş tutuyorsunuz!' or 'Farklı yönlere çeken çeşitli ilgi alanlarına sahipsiniz gibi görünüyor! 🤔'), but *always* follow up by making the best possible recommendation based on the data you have. The primary goal, even with humor, is to offer helpful guidance and persuasively describe the appeal of the recommended field for someone with their expressed leanings. Be encouraging and avoid any potentially offensive remarks. You may include two or three relevant emojis to add personality, but use them sparingly ✨.>"
 }
 ```
 
